@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  game_id: 1
+  x: 1.5
+  y: 1.5
+  angle: 1.5
+  power: 1.5
+  attempts: 1
+  score_differential: 
+  max_multiplier: 1
+
+two:
+  game_id: 1
+  x: 1.5
+  y: 1.5
+  angle: 1.5
+  power: 1.5
+  attempts: 1
+  score_differential: 
+  max_multiplier: 1

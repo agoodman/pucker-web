@@ -1,0 +1,28 @@
+<p>
+  <b>Move:</b>
+  <%=h @piece.move_id %>
+</p>
+
+<p>
+  <b>X:</b>
+  <%=h @piece.x %>
+</p>
+
+<p>
+  <b>Y:</b>
+  <%=h @piece.y %>
+</p>
+
+<p>
+  <b>Radius:</b>
+  <%=h @piece.radius %>
+</p>
+
+<p>
+  <b>Count:</b>
+  <%=h @piece.count %>
+</p>
+
+
+<%= link_to 'Edit', edit_piece_path(@piece) %> |
+<%= link_to 'Back', pieces_path %>

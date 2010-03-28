@@ -1,0 +1,43 @@
+<p>
+  <b>Game:</b>
+  <%=h @move.game_id %>
+</p>
+
+<p>
+  <b>X:</b>
+  <%=h @move.x %>
+</p>
+
+<p>
+  <b>Y:</b>
+  <%=h @move.y %>
+</p>
+
+<p>
+  <b>Angle:</b>
+  <%=h @move.angle %>
+</p>
+
+<p>
+  <b>Power:</b>
+  <%=h @move.power %>
+</p>
+
+<p>
+  <b>Attempts:</b>
+  <%=h @move.attempts %>
+</p>
+
+<p>
+  <b>Score differential:</b>
+  <%=h @move.score_differential %>
+</p>
+
+<p>
+  <b>Max multiplier:</b>
+  <%=h @move.max_multiplier %>
+</p>
+
+
+<%= link_to 'Edit', edit_move_path(@move) %> |
+<%= link_to 'Back', moves_path %>

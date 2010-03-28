@@ -1,0 +1,34 @@
+<h1>Listing moves</h1>
+
+<table>
+  <tr>
+    <th>Game</th>
+    <th>X</th>
+    <th>Y</th>
+    <th>Angle</th>
+    <th>Power</th>
+    <th>Attempts</th>
+    <th>Score differential</th>
+    <th>Max multiplier</th>
+  </tr>
+
+<% @moves.each do |move| %>
+  <tr>
+    <td><%=h move.game_id %></td>
+    <td><%=h move.x %></td>
+    <td><%=h move.y %></td>
+    <td><%=h move.angle %></td>
+    <td><%=h move.power %></td>
+    <td><%=h move.attempts %></td>
+    <td><%=h move.score_differential %></td>
+    <td><%=h move.max_multiplier %></td>
+    <td><%= link_to 'Show', move %></td>
+    <td><%= link_to 'Edit', edit_move_path(move) %></td>
+    <td><%= link_to 'Destroy', move, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New move', new_move_path %>

@@ -1,0 +1,32 @@
+<h1>Editing piece</h1>
+
+<% form_for(@piece) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :move_id %><br />
+    <%= f.text_field :move_id %>
+  </p>
+  <p>
+    <%= f.label :x %><br />
+    <%= f.text_field :x %>
+  </p>
+  <p>
+    <%= f.label :y %><br />
+    <%= f.text_field :y %>
+  </p>
+  <p>
+    <%= f.label :radius %><br />
+    <%= f.text_field :radius %>
+  </p>
+  <p>
+    <%= f.label :count %><br />
+    <%= f.text_field :count %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @piece %> |
+<%= link_to 'Back', pieces_path %>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  move_id: 1
+  x: 1.5
+  y: 1.5
+  radius: 1.5
+  count: 1
+
+two:
+  move_id: 1
+  x: 1.5
+  y: 1.5
+  radius: 1.5
+  count: 1

@@ -1,0 +1,2957 @@
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+
+
+Processing GamesController#create (for 0.0.0.0 at 2010-03-28 14:29:02) [POST]
+  Parameters: {"game"=>{}}
+  [4;35;1mGame Create (0.3ms)[0m   [0mINSERT INTO "games" ("created_at", "uuid", "updated_at", "active") VALUES('2010-03-28 18:29:02', NULL, '2010-03-28 18:29:02', NULL)[0m
+Redirected to http://test.host/games/996332878
+Completed in 4ms (DB: 2) | 302 Found [http://test.host/games?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "games" [0m
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#destroy (for 0.0.0.0 at 2010-03-28 14:29:02) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+  [4;36;1mGame Destroy (0.1ms)[0m   [0;1mDELETE FROM "games" WHERE "id" = 953125641[0m
+Redirected to http://test.host/games
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/games/953125641]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "games" [0m
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#edit (for 0.0.0.0 at 2010-03-28 14:29:02) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+Rendering template within layouts/games
+Rendering games/edit
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/games/953125641/edit]
+
+
+Processing GamesController#index (for 0.0.0.0 at 2010-03-28 14:29:02) [GET]
+  [4;36;1mGame Load (0.2ms)[0m   [0;1mSELECT * FROM "games" [0m
+Rendering template within layouts/games
+Rendering games/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/games]
+
+
+Processing GamesController#new (for 0.0.0.0 at 2010-03-28 14:29:02) [GET]
+Rendering template within layouts/games
+Rendering games/new
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/games/new]
+  [4;35;1mGame Load (0.2ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#show (for 0.0.0.0 at 2010-03-28 14:29:02) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+Rendering template within layouts/games
+Rendering games/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/games/953125641]
+  [4;35;1mGame Load (0.2ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#update (for 0.0.0.0 at 2010-03-28 14:29:02) [PUT]
+  Parameters: {"game"=>{}, "id"=>"953125641"}
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+Redirected to http://test.host/games/953125641
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/games/953125641?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "moves" [0m
+
+
+Processing MovesController#create (for 0.0.0.0 at 2010-03-28 14:29:02) [POST]
+  Parameters: {"move"=>{}}
+  [4;36;1mMove Create (0.3ms)[0m   [0;1mINSERT INTO "moves" ("angle", "created_at", "x", "y", "updated_at", "power", "max_multiplier", "game_id", "attempts", "score_differential") VALUES(NULL, '2010-03-28 18:29:02', NULL, NULL, '2010-03-28 18:29:02', NULL, NULL, NULL, NULL, NULL)[0m
+Redirected to http://test.host/moves/996332878
+Completed in 4ms (DB: 0) | 302 Found [http://test.host/moves?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "moves" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "moves" [0m
+  [4;35;1mMove Load (0.5ms)[0m   [0mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+
+
+Processing MovesController#destroy (for 0.0.0.0 at 2010-03-28 14:29:02) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mMove Load (0.2ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+  [4;35;1mMove Destroy (0.2ms)[0m   [0mDELETE FROM "moves" WHERE "id" = 953125641[0m
+Redirected to http://test.host/moves
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/moves/953125641]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "moves" [0m
+  [4;35;1mMove Load (0.2ms)[0m   [0mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+
+
+Processing MovesController#edit (for 0.0.0.0 at 2010-03-28 14:29:02) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mMove Load (0.2ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+Rendering template within layouts/moves
+Rendering moves/edit
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/moves/953125641/edit]
+
+
+Processing MovesController#index (for 0.0.0.0 at 2010-03-28 14:29:02) [GET]
+  [4;35;1mMove Load (0.3ms)[0m   [0mSELECT * FROM "moves" [0m
+Rendering template within layouts/moves
+Rendering moves/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/moves]
+
+
+Processing MovesController#new (for 0.0.0.0 at 2010-03-28 14:29:02) [GET]
+Rendering template within layouts/moves
+Rendering moves/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/moves/new]
+  [4;36;1mMove Load (0.2ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+
+
+Processing MovesController#show (for 0.0.0.0 at 2010-03-28 14:29:02) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mMove Load (0.2ms)[0m   [0mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+Rendering template within layouts/moves
+Rendering moves/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/moves/953125641]
+  [4;36;1mMove Load (0.2ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+
+
+Processing MovesController#update (for 0.0.0.0 at 2010-03-28 14:29:02) [PUT]
+  Parameters: {"id"=>"953125641", "move"=>{}}
+  [4;35;1mMove Load (0.2ms)[0m   [0mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+Redirected to http://test.host/moves/953125641
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/moves/953125641?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "pieces" [0m
+
+
+Processing PiecesController#create (for 0.0.0.0 at 2010-03-28 14:29:02) [POST]
+  Parameters: {"piece"=>{}}
+  [4;35;1mPiece Create (0.3ms)[0m   [0mINSERT INTO "pieces" ("move_id", "radius", "created_at", "x", "y", "updated_at", "count") VALUES(NULL, NULL, '2010-03-28 18:29:02', NULL, NULL, '2010-03-28 18:29:02', NULL)[0m
+Redirected to http://test.host/pieces/996332878
+Completed in 3ms (DB: 0) | 302 Found [http://test.host/pieces?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "pieces" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "pieces" [0m
+  [4;36;1mPiece Load (0.2ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#destroy (for 0.0.0.0 at 2010-03-28 14:29:02) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+  [4;36;1mPiece Destroy (0.1ms)[0m   [0;1mDELETE FROM "pieces" WHERE "id" = 953125641[0m
+Redirected to http://test.host/pieces
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/pieces/953125641]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "pieces" [0m
+  [4;36;1mPiece Load (0.2ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#edit (for 0.0.0.0 at 2010-03-28 14:29:02) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mPiece Load (0.1ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+Rendering template within layouts/pieces
+Rendering pieces/edit
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/pieces/953125641/edit]
+
+
+Processing PiecesController#index (for 0.0.0.0 at 2010-03-28 14:29:02) [GET]
+  [4;36;1mPiece Load (0.3ms)[0m   [0;1mSELECT * FROM "pieces" [0m
+Rendering template within layouts/pieces
+Rendering pieces/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/pieces]
+
+
+Processing PiecesController#new (for 0.0.0.0 at 2010-03-28 14:29:02) [GET]
+Rendering template within layouts/pieces
+Rendering pieces/new
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/pieces/new]
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#show (for 0.0.0.0 at 2010-03-28 14:29:02) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mPiece Load (0.1ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+Rendering template within layouts/pieces
+Rendering pieces/show
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/pieces/953125641]
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#update (for 0.0.0.0 at 2010-03-28 14:29:02) [PUT]
+  Parameters: {"id"=>"953125641", "piece"=>{}}
+  [4;36;1mPiece Load (0.1ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+Redirected to http://test.host/pieces/953125641
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/pieces/953125641?]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+
+
+Processing GamesController#create (for 0.0.0.0 at 2010-03-28 14:31:00) [POST]
+  Parameters: {"game"=>{}}
+Rendering template within layouts/games
+Rendering games/new
+Completed in 7ms (View: 3, DB: 1) | 200 OK [http://test.host/games?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "games" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+  [4;35;1mGame Load (0.2ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#destroy (for 0.0.0.0 at 2010-03-28 14:31:00) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mGame Load (0.2ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+  [4;35;1mGame Destroy (0.2ms)[0m   [0mDELETE FROM "games" WHERE "id" = 953125641[0m
+Redirected to http://test.host/games
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/games/953125641]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+  [4;35;1mGame Load (0.2ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#edit (for 0.0.0.0 at 2010-03-28 14:31:00) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+Rendering template within layouts/games
+Rendering games/edit
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/games/953125641/edit]
+
+
+Processing GamesController#index (for 0.0.0.0 at 2010-03-28 14:31:00) [GET]
+  [4;35;1mGame Load (0.2ms)[0m   [0mSELECT * FROM "games" [0m
+Rendering template within layouts/games
+Rendering games/index
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/games]
+
+
+Processing GamesController#new (for 0.0.0.0 at 2010-03-28 14:31:00) [GET]
+Rendering template within layouts/games
+Rendering games/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/games/new]
+  [4;36;1mGame Load (0.2ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#show (for 0.0.0.0 at 2010-03-28 14:31:00) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+Rendering template within layouts/games
+Rendering games/show
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/games/953125641]
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#update (for 0.0.0.0 at 2010-03-28 14:31:00) [PUT]
+  Parameters: {"game"=>{}, "id"=>"953125641"}
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+Redirected to http://test.host/games/953125641
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/games/953125641?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "moves" [0m
+
+
+Processing MovesController#create (for 0.0.0.0 at 2010-03-28 14:31:00) [POST]
+  Parameters: {"move"=>{}}
+Rendering template within layouts/moves
+Rendering moves/new
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://test.host/moves?]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "moves" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "moves" [0m
+  [4;35;1mMove Load (0.2ms)[0m   [0mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+
+
+Processing MovesController#destroy (for 0.0.0.0 at 2010-03-28 14:31:00) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mMove Load (0.2ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+  [4;35;1mMove Destroy (0.2ms)[0m   [0mDELETE FROM "moves" WHERE "id" = 953125641[0m
+Redirected to http://test.host/moves
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/moves/953125641]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "moves" [0m
+  [4;35;1mMove Load (0.2ms)[0m   [0mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+
+
+Processing MovesController#edit (for 0.0.0.0 at 2010-03-28 14:31:00) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mMove Load (0.2ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+Rendering template within layouts/moves
+Rendering moves/edit
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/moves/953125641/edit]
+
+
+Processing MovesController#index (for 0.0.0.0 at 2010-03-28 14:31:00) [GET]
+  [4;35;1mMove Load (0.3ms)[0m   [0mSELECT * FROM "moves" [0m
+Rendering template within layouts/moves
+Rendering moves/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/moves]
+
+
+Processing MovesController#new (for 0.0.0.0 at 2010-03-28 14:31:00) [GET]
+Rendering template within layouts/moves
+Rendering moves/new
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/moves/new]
+  [4;36;1mMove Load (0.2ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+
+
+Processing MovesController#show (for 0.0.0.0 at 2010-03-28 14:31:00) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mMove Load (0.2ms)[0m   [0mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+Rendering template within layouts/moves
+Rendering moves/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/moves/953125641]
+  [4;36;1mMove Load (0.2ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+
+
+Processing MovesController#update (for 0.0.0.0 at 2010-03-28 14:31:00) [PUT]
+  Parameters: {"id"=>"953125641", "move"=>{}}
+  [4;35;1mMove Load (0.2ms)[0m   [0mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+Rendering template within layouts/moves
+Rendering moves/edit
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://test.host/moves/953125641?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "pieces" [0m
+
+
+Processing PiecesController#create (for 0.0.0.0 at 2010-03-28 14:31:00) [POST]
+  Parameters: {"piece"=>{}}
+Rendering template within layouts/pieces
+Rendering pieces/new
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://test.host/pieces?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "pieces" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "pieces" [0m
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#destroy (for 0.0.0.0 at 2010-03-28 14:31:00) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mPiece Load (0.2ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+  [4;35;1mPiece Destroy (0.2ms)[0m   [0mDELETE FROM "pieces" WHERE "id" = 953125641[0m
+Redirected to http://test.host/pieces
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/pieces/953125641]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "pieces" [0m
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#edit (for 0.0.0.0 at 2010-03-28 14:31:00) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mPiece Load (0.2ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+Rendering template within layouts/pieces
+Rendering pieces/edit
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/pieces/953125641/edit]
+
+
+Processing PiecesController#index (for 0.0.0.0 at 2010-03-28 14:31:00) [GET]
+  [4;35;1mPiece Load (0.3ms)[0m   [0mSELECT * FROM "pieces" [0m
+Rendering template within layouts/pieces
+Rendering pieces/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/pieces]
+
+
+Processing PiecesController#new (for 0.0.0.0 at 2010-03-28 14:31:00) [GET]
+Rendering template within layouts/pieces
+Rendering pieces/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pieces/new]
+  [4;36;1mPiece Load (0.2ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#show (for 0.0.0.0 at 2010-03-28 14:31:00) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+Rendering template within layouts/pieces
+Rendering pieces/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pieces/953125641]
+  [4;36;1mPiece Load (0.2ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#update (for 0.0.0.0 at 2010-03-28 14:31:00) [PUT]
+  Parameters: {"id"=>"953125641", "piece"=>{}}
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+Redirected to http://test.host/pieces/953125641
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/pieces/953125641?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+
+
+Processing GamesController#create (for 0.0.0.0 at 2010-03-28 14:32:46) [POST]
+  Parameters: {"game"=>{}}
+Rendering template within layouts/games
+Rendering games/new
+Completed in 7ms (View: 3, DB: 1) | 200 OK [http://test.host/games?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "games" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#destroy (for 0.0.0.0 at 2010-03-28 14:32:46) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+  [4;35;1mGame Destroy (0.2ms)[0m   [0mDELETE FROM "games" WHERE "id" = 953125641[0m
+Redirected to http://test.host/games
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/games/953125641]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#edit (for 0.0.0.0 at 2010-03-28 14:32:46) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+Rendering template within layouts/games
+Rendering games/edit
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/games/953125641/edit]
+
+
+Processing GamesController#index (for 0.0.0.0 at 2010-03-28 14:32:46) [GET]
+  [4;35;1mGame Load (0.2ms)[0m   [0mSELECT * FROM "games" [0m
+Rendering template within layouts/games
+Rendering games/index
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/games]
+
+
+Processing GamesController#new (for 0.0.0.0 at 2010-03-28 14:32:46) [GET]
+Rendering template within layouts/games
+Rendering games/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/games/new]
+  [4;36;1mGame Load (0.2ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#show (for 0.0.0.0 at 2010-03-28 14:32:46) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+Rendering template within layouts/games
+Rendering games/show
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/games/953125641]
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#update (for 0.0.0.0 at 2010-03-28 14:32:46) [PUT]
+  Parameters: {"game"=>{}, "id"=>"953125641"}
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+Redirected to http://test.host/games/953125641
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/games/953125641?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "moves" [0m
+
+
+Processing MovesController#create (for 0.0.0.0 at 2010-03-28 14:32:46) [POST]
+  Parameters: {"move"=>{}}
+Rendering template within layouts/moves
+Rendering moves/new
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://test.host/moves?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "moves" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "moves" [0m
+  [4;35;1mMove Load (0.2ms)[0m   [0mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+
+
+Processing MovesController#destroy (for 0.0.0.0 at 2010-03-28 14:32:46) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mMove Load (0.2ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+  [4;35;1mMove Destroy (0.2ms)[0m   [0mDELETE FROM "moves" WHERE "id" = 953125641[0m
+Redirected to http://test.host/moves
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/moves/953125641]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "moves" [0m
+  [4;35;1mMove Load (0.2ms)[0m   [0mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+
+
+Processing MovesController#edit (for 0.0.0.0 at 2010-03-28 14:32:46) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mMove Load (0.2ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+Rendering template within layouts/moves
+Rendering moves/edit
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/moves/953125641/edit]
+
+
+Processing MovesController#index (for 0.0.0.0 at 2010-03-28 14:32:46) [GET]
+  [4;35;1mMove Load (0.3ms)[0m   [0mSELECT * FROM "moves" [0m
+Rendering template within layouts/moves
+Rendering moves/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/moves]
+
+
+Processing MovesController#new (for 0.0.0.0 at 2010-03-28 14:32:46) [GET]
+Rendering template within layouts/moves
+Rendering moves/new
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/moves/new]
+  [4;36;1mMove Load (0.2ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+
+
+Processing MovesController#show (for 0.0.0.0 at 2010-03-28 14:32:46) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mMove Load (0.2ms)[0m   [0mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+Rendering template within layouts/moves
+Rendering moves/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/moves/953125641]
+  [4;36;1mMove Load (0.2ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+
+
+Processing MovesController#update (for 0.0.0.0 at 2010-03-28 14:32:46) [PUT]
+  Parameters: {"id"=>"953125641", "move"=>{}}
+  [4;35;1mMove Load (0.2ms)[0m   [0mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+Rendering template within layouts/moves
+Rendering moves/edit
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/moves/953125641?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "pieces" [0m
+
+
+Processing PiecesController#create (for 0.0.0.0 at 2010-03-28 14:32:46) [POST]
+  Parameters: {"piece"=>{}}
+Rendering template within layouts/pieces
+Rendering pieces/new
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://test.host/pieces?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "pieces" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "pieces" [0m
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#destroy (for 0.0.0.0 at 2010-03-28 14:32:46) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mPiece Load (0.2ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+  [4;35;1mPiece Destroy (0.2ms)[0m   [0mDELETE FROM "pieces" WHERE "id" = 953125641[0m
+Redirected to http://test.host/pieces
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/pieces/953125641]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "pieces" [0m
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#edit (for 0.0.0.0 at 2010-03-28 14:32:46) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mPiece Load (0.2ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+Rendering template within layouts/pieces
+Rendering pieces/edit
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/pieces/953125641/edit]
+
+
+Processing PiecesController#index (for 0.0.0.0 at 2010-03-28 14:32:46) [GET]
+  [4;35;1mPiece Load (0.3ms)[0m   [0mSELECT * FROM "pieces" [0m
+Rendering template within layouts/pieces
+Rendering pieces/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/pieces]
+
+
+Processing PiecesController#new (for 0.0.0.0 at 2010-03-28 14:32:46) [GET]
+Rendering template within layouts/pieces
+Rendering pieces/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pieces/new]
+  [4;36;1mPiece Load (0.2ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#show (for 0.0.0.0 at 2010-03-28 14:32:46) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+Rendering template within layouts/pieces
+Rendering pieces/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pieces/953125641]
+  [4;36;1mPiece Load (0.2ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#update (for 0.0.0.0 at 2010-03-28 14:32:46) [PUT]
+  Parameters: {"id"=>"953125641", "piece"=>{}}
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+Redirected to http://test.host/pieces/953125641
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/pieces/953125641?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+
+
+Processing GamesController#create (for 0.0.0.0 at 2010-03-28 14:57:29) [POST]
+  Parameters: {"game"=>{"uuid"=>"ABCD1234", "active"=>true}}
+  [4;35;1mGame Create (0.3ms)[0m   [0mINSERT INTO "games" ("created_at", "uuid", "updated_at", "active") VALUES('2010-03-28 18:57:29', 'ABCD1234', '2010-03-28 18:57:29', 't')[0m
+Completed in 92ms (View: 87, DB: 2) | 201 Created [http://test.host/games?game%5Bactive%5D=true&game%5Buuid%5D=ABCD1234]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "games" [0m
+  [4;36;1mGame Create (0.2ms)[0m   [0;1mINSERT INTO "games" ("created_at", "uuid", "updated_at", "active") VALUES('2010-03-28 18:57:29', 'ABCD1234', '2010-03-28 18:57:29', 't')[0m
+
+
+Processing GamesController#destroy (for 0.0.0.0 at 2010-03-28 14:57:29) [DELETE]
+  Parameters: {"id"=>"996332878"}
+  [4;35;1mGame Create (0.3ms)[0m   [0mINSERT INTO "games" ("created_at", "uuid", "updated_at", "active") VALUES('2010-03-28 18:57:29', 'ABCD1234', '2010-03-28 18:57:29', 't')[0m
+
+
+Processing GamesController#edit (for 0.0.0.0 at 2010-03-28 14:57:29) [GET]
+  Parameters: {"id"=>"996332878"}
+Rendering template within layouts/games
+Rendering games/edit
+
+
+Processing GamesController#index (for 0.0.0.0 at 2010-03-28 14:57:29) [GET]
+  [4;36;1mGame Load (0.2ms)[0m   [0;1mSELECT * FROM "games" [0m
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/games]
+
+
+Processing GamesController#new (for 0.0.0.0 at 2010-03-28 14:57:29) [GET]
+Rendering template within layouts/games
+Rendering games/new
+  [4;35;1mGame Create (0.3ms)[0m   [0mINSERT INTO "games" ("created_at", "uuid", "updated_at", "active") VALUES('2010-03-28 18:57:29', 'ABCD1234', '2010-03-28 18:57:29', 't')[0m
+
+
+Processing GamesController#show (for 0.0.0.0 at 2010-03-28 14:57:29) [GET]
+  Parameters: {"id"=>"996332878"}
+  [4;36;1mGame Load (0.2ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 996332878) [0m
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/games/996332878]
+  [4;35;1mGame Create (0.2ms)[0m   [0mINSERT INTO "games" ("created_at", "uuid", "updated_at", "active") VALUES('2010-03-28 18:57:29', 'ABCD1234', '2010-03-28 18:57:29', 't')[0m
+
+
+Processing GamesController#update (for 0.0.0.0 at 2010-03-28 14:57:29) [PUT]
+  Parameters: {"game"=>{"uuid"=>"ABCD1234", "active"=>true}, "id"=>"996332878"}
+  [4;36;1mGame Load (0.2ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 996332878) [0m
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/games/996332878?game%5Bactive%5D=true&game%5Buuid%5D=ABCD1234]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "moves" [0m
+
+
+Processing MovesController#create (for 0.0.0.0 at 2010-03-28 14:57:29) [POST]
+  Parameters: {"move"=>{}}
+Rendering template within layouts/moves
+Rendering moves/new
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://test.host/moves?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "moves" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "moves" [0m
+  [4;36;1mMove Load (0.2ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+
+
+Processing MovesController#destroy (for 0.0.0.0 at 2010-03-28 14:57:29) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mMove Load (0.2ms)[0m   [0mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+  [4;36;1mMove Destroy (0.2ms)[0m   [0;1mDELETE FROM "moves" WHERE "id" = 953125641[0m
+Redirected to http://test.host/moves
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/moves/953125641]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "moves" [0m
+  [4;36;1mMove Load (0.2ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+
+
+Processing MovesController#edit (for 0.0.0.0 at 2010-03-28 14:57:29) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mMove Load (0.2ms)[0m   [0mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+Rendering template within layouts/moves
+Rendering moves/edit
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/moves/953125641/edit]
+
+
+Processing MovesController#index (for 0.0.0.0 at 2010-03-28 14:57:29) [GET]
+  [4;36;1mMove Load (0.3ms)[0m   [0;1mSELECT * FROM "moves" [0m
+Rendering template within layouts/moves
+Rendering moves/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/moves]
+
+
+Processing MovesController#new (for 0.0.0.0 at 2010-03-28 14:57:29) [GET]
+Rendering template within layouts/moves
+Rendering moves/new
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/moves/new]
+  [4;35;1mMove Load (0.2ms)[0m   [0mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+
+
+Processing MovesController#show (for 0.0.0.0 at 2010-03-28 14:57:29) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mMove Load (0.2ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+Rendering template within layouts/moves
+Rendering moves/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/moves/953125641]
+  [4;35;1mMove Load (0.2ms)[0m   [0mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+
+
+Processing MovesController#update (for 0.0.0.0 at 2010-03-28 14:57:29) [PUT]
+  Parameters: {"id"=>"953125641", "move"=>{}}
+  [4;36;1mMove Load (0.2ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+Rendering template within layouts/moves
+Rendering moves/edit
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/moves/953125641?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "pieces" [0m
+
+
+Processing PiecesController#create (for 0.0.0.0 at 2010-03-28 14:57:29) [POST]
+  Parameters: {"piece"=>{}}
+Rendering template within layouts/pieces
+Rendering pieces/new
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://test.host/pieces?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "pieces" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "pieces" [0m
+  [4;36;1mPiece Load (0.2ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#destroy (for 0.0.0.0 at 2010-03-28 14:57:29) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+  [4;36;1mPiece Destroy (0.2ms)[0m   [0;1mDELETE FROM "pieces" WHERE "id" = 953125641[0m
+Redirected to http://test.host/pieces
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/pieces/953125641]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "pieces" [0m
+  [4;36;1mPiece Load (0.2ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#edit (for 0.0.0.0 at 2010-03-28 14:57:29) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+Rendering template within layouts/pieces
+Rendering pieces/edit
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/pieces/953125641/edit]
+
+
+Processing PiecesController#index (for 0.0.0.0 at 2010-03-28 14:57:29) [GET]
+  [4;36;1mPiece Load (0.3ms)[0m   [0;1mSELECT * FROM "pieces" [0m
+Rendering template within layouts/pieces
+Rendering pieces/index
+Completed in 56ms (View: 56, DB: 0) | 200 OK [http://test.host/pieces]
+
+
+Processing PiecesController#new (for 0.0.0.0 at 2010-03-28 14:57:29) [GET]
+Rendering template within layouts/pieces
+Rendering pieces/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pieces/new]
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#show (for 0.0.0.0 at 2010-03-28 14:57:29) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mPiece Load (0.2ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+Rendering template within layouts/pieces
+Rendering pieces/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pieces/953125641]
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#update (for 0.0.0.0 at 2010-03-28 14:57:29) [PUT]
+  Parameters: {"id"=>"953125641", "piece"=>{}}
+  [4;36;1mPiece Load (0.2ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+Redirected to http://test.host/pieces/953125641
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/pieces/953125641?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+
+
+Processing GamesController#create (for 0.0.0.0 at 2010-03-28 15:05:15) [POST]
+  Parameters: {"game"=>{}}
+Rendering template within layouts/games
+Rendering games/new
+Completed in 7ms (View: 3, DB: 1) | 200 OK [http://test.host/games?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "games" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#destroy (for 0.0.0.0 at 2010-03-28 15:05:15) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+  [4;35;1mGame Destroy (0.2ms)[0m   [0mDELETE FROM "games" WHERE "id" = 953125641[0m
+Redirected to http://test.host/games
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/games/953125641]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+  [4;35;1mGame Load (0.2ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#edit (for 0.0.0.0 at 2010-03-28 15:05:15) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+Rendering template within layouts/games
+Rendering games/edit
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/games/953125641/edit]
+
+
+Processing GamesController#index (for 0.0.0.0 at 2010-03-28 15:05:15) [GET]
+  [4;35;1mGame Load (0.2ms)[0m   [0mSELECT * FROM "games" [0m
+Rendering template within layouts/games
+Rendering games/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/games]
+
+
+Processing GamesController#new (for 0.0.0.0 at 2010-03-28 15:05:15) [GET]
+Rendering template within layouts/games
+Rendering games/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/games/new]
+  [4;36;1mGame Load (0.2ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#show (for 0.0.0.0 at 2010-03-28 15:05:15) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+Rendering template within layouts/games
+Rendering games/show
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/games/953125641]
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#update (for 0.0.0.0 at 2010-03-28 15:05:15) [PUT]
+  Parameters: {"game"=>{}, "id"=>"953125641"}
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+Redirected to http://test.host/games/953125641
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/games/953125641?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "moves" [0m
+
+
+Processing MovesController#create (for 0.0.0.0 at 2010-03-28 15:05:15) [POST]
+  Parameters: {"move"=>{}}
+Rendering template within layouts/moves
+Rendering moves/new
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://test.host/moves?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "moves" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "moves" [0m
+  [4;35;1mMove Load (0.2ms)[0m   [0mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+
+
+Processing MovesController#destroy (for 0.0.0.0 at 2010-03-28 15:05:15) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mMove Load (0.2ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+  [4;35;1mMove Destroy (0.2ms)[0m   [0mDELETE FROM "moves" WHERE "id" = 953125641[0m
+Redirected to http://test.host/moves
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/moves/953125641]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "moves" [0m
+  [4;35;1mMove Load (0.3ms)[0m   [0mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+
+
+Processing MovesController#edit (for 0.0.0.0 at 2010-03-28 15:05:15) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mMove Load (0.2ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+Rendering template within layouts/moves
+Rendering moves/edit
+Completed in 4ms (View: 3, DB: 1) | 200 OK [http://test.host/moves/953125641/edit]
+
+
+Processing MovesController#index (for 0.0.0.0 at 2010-03-28 15:05:15) [GET]
+  [4;35;1mMove Load (0.3ms)[0m   [0mSELECT * FROM "moves" [0m
+Rendering template within layouts/moves
+Rendering moves/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/moves]
+
+
+Processing MovesController#new (for 0.0.0.0 at 2010-03-28 15:05:15) [GET]
+Rendering template within layouts/moves
+Rendering moves/new
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/moves/new]
+  [4;36;1mMove Load (0.2ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+
+
+Processing MovesController#show (for 0.0.0.0 at 2010-03-28 15:05:15) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mMove Load (0.2ms)[0m   [0mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+Rendering template within layouts/moves
+Rendering moves/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/moves/953125641]
+  [4;36;1mMove Load (0.2ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+
+
+Processing MovesController#update (for 0.0.0.0 at 2010-03-28 15:05:15) [PUT]
+  Parameters: {"id"=>"953125641", "move"=>{}}
+  [4;35;1mMove Load (0.2ms)[0m   [0mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+Rendering template within layouts/moves
+Rendering moves/edit
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/moves/953125641?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "pieces" [0m
+
+
+Processing PiecesController#create (for 0.0.0.0 at 2010-03-28 15:05:15) [POST]
+  Parameters: {"piece"=>{}}
+Rendering template within layouts/pieces
+Rendering pieces/new
+Completed in 8ms (View: 4, DB: 0) | 200 OK [http://test.host/pieces?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "pieces" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "pieces" [0m
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#destroy (for 0.0.0.0 at 2010-03-28 15:05:15) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mPiece Load (0.2ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+  [4;35;1mPiece Destroy (0.2ms)[0m   [0mDELETE FROM "pieces" WHERE "id" = 953125641[0m
+Redirected to http://test.host/pieces
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/pieces/953125641]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "pieces" [0m
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#edit (for 0.0.0.0 at 2010-03-28 15:05:15) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mPiece Load (0.2ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+Rendering template within layouts/pieces
+Rendering pieces/edit
+Completed in 55ms (View: 54, DB: 0) | 200 OK [http://test.host/pieces/953125641/edit]
+
+
+Processing PiecesController#index (for 0.0.0.0 at 2010-03-28 15:05:15) [GET]
+  [4;35;1mPiece Load (0.3ms)[0m   [0mSELECT * FROM "pieces" [0m
+Rendering template within layouts/pieces
+Rendering pieces/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/pieces]
+
+
+Processing PiecesController#new (for 0.0.0.0 at 2010-03-28 15:05:15) [GET]
+Rendering template within layouts/pieces
+Rendering pieces/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pieces/new]
+  [4;36;1mPiece Load (0.2ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#show (for 0.0.0.0 at 2010-03-28 15:05:15) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mPiece Load (0.1ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+Rendering template within layouts/pieces
+Rendering pieces/show
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/pieces/953125641]
+  [4;36;1mPiece Load (0.2ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#update (for 0.0.0.0 at 2010-03-28 15:05:15) [PUT]
+  Parameters: {"id"=>"953125641", "piece"=>{}}
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+Redirected to http://test.host/pieces/953125641
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/pieces/953125641?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+
+
+Processing GamesController#create (for 0.0.0.0 at 2010-03-28 15:08:16) [POST]
+  Parameters: {"game"=>{}}
+Rendering template within layouts/games
+Rendering games/new
+Completed in 7ms (View: 3, DB: 1) | 200 OK [http://test.host/games?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "games" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#destroy (for 0.0.0.0 at 2010-03-28 15:08:16) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+  [4;35;1mGame Destroy (0.2ms)[0m   [0mDELETE FROM "games" WHERE "id" = 953125641[0m
+Redirected to http://test.host/games
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/games/953125641]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#edit (for 0.0.0.0 at 2010-03-28 15:08:16) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+Rendering template within layouts/games
+Rendering games/edit
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/games/953125641/edit]
+
+
+Processing GamesController#index (for 0.0.0.0 at 2010-03-28 15:08:16) [GET]
+  [4;35;1mGame Load (0.2ms)[0m   [0mSELECT * FROM "games" [0m
+Rendering template within layouts/games
+Rendering games/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/games]
+
+
+Processing GamesController#new (for 0.0.0.0 at 2010-03-28 15:08:16) [GET]
+Rendering template within layouts/games
+Rendering games/new
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/games/new]
+  [4;36;1mGame Load (0.2ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#show (for 0.0.0.0 at 2010-03-28 15:08:16) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+Rendering template within layouts/games
+Rendering games/show
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/games/953125641]
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#update (for 0.0.0.0 at 2010-03-28 15:08:16) [PUT]
+  Parameters: {"game"=>{}, "id"=>"953125641"}
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+Redirected to http://test.host/games/953125641
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/games/953125641?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "moves" [0m
+
+
+Processing MovesController#create (for 0.0.0.0 at 2010-03-28 15:08:16) [POST]
+  Parameters: {"move"=>{}}
+Rendering template within layouts/moves
+Rendering moves/new
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://test.host/moves?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "moves" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "moves" [0m
+  [4;35;1mMove Load (0.2ms)[0m   [0mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+
+
+Processing MovesController#destroy (for 0.0.0.0 at 2010-03-28 15:08:16) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mMove Load (0.2ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+  [4;35;1mMove Destroy (0.2ms)[0m   [0mDELETE FROM "moves" WHERE "id" = 953125641[0m
+Redirected to http://test.host/moves
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/moves/953125641]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "moves" [0m
+  [4;35;1mMove Load (0.2ms)[0m   [0mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+
+
+Processing MovesController#edit (for 0.0.0.0 at 2010-03-28 15:08:16) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mMove Load (0.2ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+Rendering template within layouts/moves
+Rendering moves/edit
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/moves/953125641/edit]
+
+
+Processing MovesController#index (for 0.0.0.0 at 2010-03-28 15:08:16) [GET]
+  [4;35;1mMove Load (0.3ms)[0m   [0mSELECT * FROM "moves" [0m
+Rendering template within layouts/moves
+Rendering moves/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/moves]
+
+
+Processing MovesController#new (for 0.0.0.0 at 2010-03-28 15:08:16) [GET]
+Rendering template within layouts/moves
+Rendering moves/new
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/moves/new]
+  [4;36;1mMove Load (0.2ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+
+
+Processing MovesController#show (for 0.0.0.0 at 2010-03-28 15:08:16) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mMove Load (0.2ms)[0m   [0mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+Rendering template within layouts/moves
+Rendering moves/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/moves/953125641]
+  [4;36;1mMove Load (0.2ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+
+
+Processing MovesController#update (for 0.0.0.0 at 2010-03-28 15:08:16) [PUT]
+  Parameters: {"id"=>"953125641", "move"=>{}}
+  [4;35;1mMove Load (0.2ms)[0m   [0mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+Rendering template within layouts/moves
+Rendering moves/edit
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/moves/953125641?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "pieces" [0m
+
+
+Processing PiecesController#create (for 0.0.0.0 at 2010-03-28 15:08:16) [POST]
+  Parameters: {"piece"=>{}}
+Rendering template within layouts/pieces
+Rendering pieces/new
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://test.host/pieces?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "pieces" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "pieces" [0m
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#destroy (for 0.0.0.0 at 2010-03-28 15:08:16) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mPiece Load (0.2ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+  [4;35;1mPiece Destroy (0.2ms)[0m   [0mDELETE FROM "pieces" WHERE "id" = 953125641[0m
+Redirected to http://test.host/pieces
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/pieces/953125641]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "pieces" [0m
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#edit (for 0.0.0.0 at 2010-03-28 15:08:16) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mPiece Load (0.2ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+Rendering template within layouts/pieces
+Rendering pieces/edit
+Completed in 55ms (View: 54, DB: 0) | 200 OK [http://test.host/pieces/953125641/edit]
+
+
+Processing PiecesController#index (for 0.0.0.0 at 2010-03-28 15:08:16) [GET]
+  [4;35;1mPiece Load (0.3ms)[0m   [0mSELECT * FROM "pieces" [0m
+Rendering template within layouts/pieces
+Rendering pieces/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/pieces]
+
+
+Processing PiecesController#new (for 0.0.0.0 at 2010-03-28 15:08:16) [GET]
+Rendering template within layouts/pieces
+Rendering pieces/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pieces/new]
+  [4;36;1mPiece Load (0.2ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#show (for 0.0.0.0 at 2010-03-28 15:08:16) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mPiece Load (0.1ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+Rendering template within layouts/pieces
+Rendering pieces/show
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/pieces/953125641]
+  [4;36;1mPiece Load (0.2ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#update (for 0.0.0.0 at 2010-03-28 15:08:16) [PUT]
+  Parameters: {"id"=>"953125641", "piece"=>{}}
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+Redirected to http://test.host/pieces/953125641
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/pieces/953125641?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+
+
+Processing GamesController#create (for 0.0.0.0 at 2010-03-28 15:08:53) [POST]
+  Parameters: {"game"=>{"uuid"=>"ABCD1234"}}
+  [4;35;1mGame Create (0.3ms)[0m   [0mINSERT INTO "games" ("created_at", "uuid", "updated_at", "active") VALUES('2010-03-28 19:08:53', 'ABCD1234', '2010-03-28 19:08:53', NULL)[0m
+Redirected to http://test.host/games/996332878
+Completed in 5ms (DB: 1) | 302 Found [http://test.host/games?game%5Buuid%5D=ABCD1234]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "games" [0m
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#destroy (for 0.0.0.0 at 2010-03-28 15:08:53) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+  [4;36;1mGame Destroy (0.1ms)[0m   [0;1mDELETE FROM "games" WHERE "id" = 953125641[0m
+Redirected to http://test.host/games
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/games/953125641]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "games" [0m
+  [4;36;1mGame Load (0.2ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#edit (for 0.0.0.0 at 2010-03-28 15:08:53) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+Rendering template within layouts/games
+Rendering games/edit
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/games/953125641/edit]
+
+
+Processing GamesController#index (for 0.0.0.0 at 2010-03-28 15:08:53) [GET]
+  [4;36;1mGame Load (0.2ms)[0m   [0;1mSELECT * FROM "games" [0m
+Rendering template within layouts/games
+Rendering games/index
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/games]
+
+
+Processing GamesController#new (for 0.0.0.0 at 2010-03-28 15:08:53) [GET]
+Rendering template within layouts/games
+Rendering games/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/games/new]
+  [4;35;1mGame Load (0.2ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#show (for 0.0.0.0 at 2010-03-28 15:08:53) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+Rendering template within layouts/games
+Rendering games/show
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/games/953125641]
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#update (for 0.0.0.0 at 2010-03-28 15:08:53) [PUT]
+  Parameters: {"game"=>{}, "id"=>"953125641"}
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+Redirected to http://test.host/games/953125641
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/games/953125641?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "moves" [0m
+
+
+Processing MovesController#create (for 0.0.0.0 at 2010-03-28 15:08:53) [POST]
+  Parameters: {"move"=>{}}
+Rendering template within layouts/moves
+Rendering moves/new
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://test.host/moves?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "moves" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "moves" [0m
+  [4;36;1mMove Load (0.2ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+
+
+Processing MovesController#destroy (for 0.0.0.0 at 2010-03-28 15:08:53) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mMove Load (0.2ms)[0m   [0mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+  [4;36;1mMove Destroy (0.2ms)[0m   [0;1mDELETE FROM "moves" WHERE "id" = 953125641[0m
+Redirected to http://test.host/moves
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/moves/953125641]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "moves" [0m
+  [4;36;1mMove Load (0.2ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+
+
+Processing MovesController#edit (for 0.0.0.0 at 2010-03-28 15:08:53) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mMove Load (0.2ms)[0m   [0mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+Rendering template within layouts/moves
+Rendering moves/edit
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/moves/953125641/edit]
+
+
+Processing MovesController#index (for 0.0.0.0 at 2010-03-28 15:08:53) [GET]
+  [4;36;1mMove Load (0.3ms)[0m   [0;1mSELECT * FROM "moves" [0m
+Rendering template within layouts/moves
+Rendering moves/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/moves]
+
+
+Processing MovesController#new (for 0.0.0.0 at 2010-03-28 15:08:53) [GET]
+Rendering template within layouts/moves
+Rendering moves/new
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/moves/new]
+  [4;35;1mMove Load (0.2ms)[0m   [0mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+
+
+Processing MovesController#show (for 0.0.0.0 at 2010-03-28 15:08:53) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mMove Load (0.2ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+Rendering template within layouts/moves
+Rendering moves/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/moves/953125641]
+  [4;35;1mMove Load (0.2ms)[0m   [0mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+
+
+Processing MovesController#update (for 0.0.0.0 at 2010-03-28 15:08:53) [PUT]
+  Parameters: {"id"=>"953125641", "move"=>{}}
+  [4;36;1mMove Load (0.2ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+Rendering template within layouts/moves
+Rendering moves/edit
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/moves/953125641?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "pieces" [0m
+
+
+Processing PiecesController#create (for 0.0.0.0 at 2010-03-28 15:08:53) [POST]
+  Parameters: {"piece"=>{}}
+Rendering template within layouts/pieces
+Rendering pieces/new
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://test.host/pieces?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "pieces" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "pieces" [0m
+  [4;36;1mPiece Load (0.2ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#destroy (for 0.0.0.0 at 2010-03-28 15:08:53) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+  [4;36;1mPiece Destroy (0.2ms)[0m   [0;1mDELETE FROM "pieces" WHERE "id" = 953125641[0m
+Redirected to http://test.host/pieces
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/pieces/953125641]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "pieces" [0m
+  [4;36;1mPiece Load (0.2ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#edit (for 0.0.0.0 at 2010-03-28 15:08:53) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+Rendering template within layouts/pieces
+Rendering pieces/edit
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/pieces/953125641/edit]
+
+
+Processing PiecesController#index (for 0.0.0.0 at 2010-03-28 15:08:53) [GET]
+  [4;36;1mPiece Load (0.3ms)[0m   [0;1mSELECT * FROM "pieces" [0m
+Rendering template within layouts/pieces
+Rendering pieces/index
+Completed in 55ms (View: 54, DB: 0) | 200 OK [http://test.host/pieces]
+
+
+Processing PiecesController#new (for 0.0.0.0 at 2010-03-28 15:08:53) [GET]
+Rendering template within layouts/pieces
+Rendering pieces/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pieces/new]
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#show (for 0.0.0.0 at 2010-03-28 15:08:53) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mPiece Load (0.2ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+Rendering template within layouts/pieces
+Rendering pieces/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pieces/953125641]
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#update (for 0.0.0.0 at 2010-03-28 15:08:53) [PUT]
+  Parameters: {"id"=>"953125641", "piece"=>{}}
+  [4;36;1mPiece Load (0.1ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+Redirected to http://test.host/pieces/953125641
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/pieces/953125641?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+
+
+Processing GamesController#create (for 0.0.0.0 at 2010-03-28 15:18:57) [POST]
+  Parameters: {"game"=>{"uuid"=>"ABCD1234"}}
+  [4;35;1mGame Create (0.3ms)[0m   [0mINSERT INTO "games" ("created_at", "uuid", "updated_at", "active") VALUES('2010-03-28 19:18:57', 'ABCD1234', '2010-03-28 19:18:57', NULL)[0m
+Redirected to http://test.host/games/996332878
+Completed in 5ms (DB: 1) | 302 Found [http://test.host/games?game%5Buuid%5D=ABCD1234]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "games" [0m
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#destroy (for 0.0.0.0 at 2010-03-28 15:18:57) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mGame Load (0.2ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+  [4;36;1mGame Destroy (0.2ms)[0m   [0;1mDELETE FROM "games" WHERE "id" = 953125641[0m
+Redirected to http://test.host/games
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/games/953125641]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "games" [0m
+  [4;36;1mGame Load (0.2ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#edit (for 0.0.0.0 at 2010-03-28 15:18:57) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+Rendering template within layouts/games
+Rendering games/edit
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/games/953125641/edit]
+
+
+Processing GamesController#index (for 0.0.0.0 at 2010-03-28 15:18:57) [GET]
+  [4;36;1mGame Load (0.2ms)[0m   [0;1mSELECT * FROM "games" [0m
+Rendering template within layouts/games
+Rendering games/index
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/games]
+
+
+Processing GamesController#new (for 0.0.0.0 at 2010-03-28 15:18:57) [GET]
+Rendering template within layouts/games
+Rendering games/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/games/new]
+  [4;35;1mGame Load (0.2ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#show (for 0.0.0.0 at 2010-03-28 15:18:57) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+Rendering template within layouts/games
+Rendering games/show
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/games/953125641]
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#update (for 0.0.0.0 at 2010-03-28 15:18:57) [PUT]
+  Parameters: {"game"=>{}, "id"=>"953125641"}
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+Redirected to http://test.host/games/953125641
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/games/953125641?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "moves" [0m
+
+
+Processing MovesController#create (for 0.0.0.0 at 2010-03-28 15:18:57) [POST]
+  Parameters: {"move"=>{"angle"=>1, "x"=>1, "y"=>1, "power"=>1, "game_id"=>1, "attempts"=>1}}
+Rendering template within layouts/moves
+Rendering moves/new
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://test.host/moves?move%5Bangle%5D=1&move%5Battempts%5D=1&move%5Bgame_id%5D=1&move%5Bpower%5D=1&move%5Bx%5D=1&move%5By%5D=1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "moves" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "moves" [0m
+  [4;36;1mMove Load (0.2ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+
+
+Processing MovesController#destroy (for 0.0.0.0 at 2010-03-28 15:18:57) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mMove Load (0.2ms)[0m   [0mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+  [4;36;1mMove Destroy (0.2ms)[0m   [0;1mDELETE FROM "moves" WHERE "id" = 953125641[0m
+Redirected to http://test.host/moves
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/moves/953125641]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "moves" [0m
+  [4;36;1mMove Load (0.2ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+
+
+Processing MovesController#edit (for 0.0.0.0 at 2010-03-28 15:18:57) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mMove Load (0.2ms)[0m   [0mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+Rendering template within layouts/moves
+Rendering moves/edit
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/moves/953125641/edit]
+
+
+Processing MovesController#index (for 0.0.0.0 at 2010-03-28 15:18:57) [GET]
+  [4;36;1mMove Load (0.3ms)[0m   [0;1mSELECT * FROM "moves" [0m
+Rendering template within layouts/moves
+Rendering moves/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/moves]
+
+
+Processing MovesController#new (for 0.0.0.0 at 2010-03-28 15:18:57) [GET]
+Rendering template within layouts/moves
+Rendering moves/new
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/moves/new]
+  [4;35;1mMove Load (0.2ms)[0m   [0mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+
+
+Processing MovesController#show (for 0.0.0.0 at 2010-03-28 15:18:57) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mMove Load (0.2ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+Rendering template within layouts/moves
+Rendering moves/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/moves/953125641]
+
+
+Processing MovesController#update (for 0.0.0.0 at 2010-03-28 15:18:57) [PUT]
+  Parameters: {"id"=>nil, "move"=>{"angle"=>1, "x"=>1, "y"=>1, "power"=>1, "game_id"=>1, "attempts"=>1}}
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "pieces" [0m
+
+
+Processing PiecesController#create (for 0.0.0.0 at 2010-03-28 15:18:57) [POST]
+  Parameters: {"piece"=>{}}
+Rendering template within layouts/pieces
+Rendering pieces/new
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://test.host/pieces?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "pieces" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "pieces" [0m
+  [4;36;1mPiece Load (0.2ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#destroy (for 0.0.0.0 at 2010-03-28 15:18:57) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+  [4;36;1mPiece Destroy (0.2ms)[0m   [0;1mDELETE FROM "pieces" WHERE "id" = 953125641[0m
+Redirected to http://test.host/pieces
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/pieces/953125641]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "pieces" [0m
+  [4;36;1mPiece Load (0.2ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#edit (for 0.0.0.0 at 2010-03-28 15:18:57) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+Rendering template within layouts/pieces
+Rendering pieces/edit
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/pieces/953125641/edit]
+
+
+Processing PiecesController#index (for 0.0.0.0 at 2010-03-28 15:18:57) [GET]
+  [4;36;1mPiece Load (0.3ms)[0m   [0;1mSELECT * FROM "pieces" [0m
+Rendering template within layouts/pieces
+Rendering pieces/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/pieces]
+
+
+Processing PiecesController#new (for 0.0.0.0 at 2010-03-28 15:18:57) [GET]
+Rendering template within layouts/pieces
+Rendering pieces/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pieces/new]
+  [4;35;1mPiece Load (0.3ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#show (for 0.0.0.0 at 2010-03-28 15:18:57) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mPiece Load (0.2ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+Rendering template within layouts/pieces
+Rendering pieces/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pieces/953125641]
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#update (for 0.0.0.0 at 2010-03-28 15:18:57) [PUT]
+  Parameters: {"id"=>"953125641", "piece"=>{}}
+  [4;36;1mPiece Load (0.2ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+Redirected to http://test.host/pieces/953125641
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/pieces/953125641?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+
+
+Processing GamesController#create (for 0.0.0.0 at 2010-03-28 15:20:19) [POST]
+  Parameters: {"game"=>{"uuid"=>"ABCD1234"}}
+  [4;35;1mGame Create (0.3ms)[0m   [0mINSERT INTO "games" ("created_at", "uuid", "updated_at", "active") VALUES('2010-03-28 19:20:19', 'ABCD1234', '2010-03-28 19:20:19', NULL)[0m
+Redirected to http://test.host/games/996332878
+Completed in 5ms (DB: 1) | 302 Found [http://test.host/games?game%5Buuid%5D=ABCD1234]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "games" [0m
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#destroy (for 0.0.0.0 at 2010-03-28 15:20:19) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+  [4;36;1mGame Destroy (0.1ms)[0m   [0;1mDELETE FROM "games" WHERE "id" = 953125641[0m
+Redirected to http://test.host/games
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/games/953125641]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "games" [0m
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#edit (for 0.0.0.0 at 2010-03-28 15:20:19) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+Rendering template within layouts/games
+Rendering games/edit
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/games/953125641/edit]
+
+
+Processing GamesController#index (for 0.0.0.0 at 2010-03-28 15:20:19) [GET]
+  [4;36;1mGame Load (0.2ms)[0m   [0;1mSELECT * FROM "games" [0m
+Rendering template within layouts/games
+Rendering games/index
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/games]
+
+
+Processing GamesController#new (for 0.0.0.0 at 2010-03-28 15:20:19) [GET]
+Rendering template within layouts/games
+Rendering games/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/games/new]
+  [4;35;1mGame Load (0.2ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#show (for 0.0.0.0 at 2010-03-28 15:20:19) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+Rendering template within layouts/games
+Rendering games/show
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/games/953125641]
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#update (for 0.0.0.0 at 2010-03-28 15:20:19) [PUT]
+  Parameters: {"game"=>{}, "id"=>"953125641"}
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+Redirected to http://test.host/games/953125641
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/games/953125641?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "moves" [0m
+
+
+Processing MovesController#create (for 0.0.0.0 at 2010-03-28 15:20:20) [POST]
+  Parameters: {"move"=>{"angle"=>1, "x"=>1, "y"=>1, "power"=>1, "game_id"=>1, "attempts"=>1}}
+Rendering template within layouts/moves
+Rendering moves/new
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://test.host/moves?move%5Bangle%5D=1&move%5Battempts%5D=1&move%5Bgame_id%5D=1&move%5Bpower%5D=1&move%5Bx%5D=1&move%5By%5D=1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "moves" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "moves" [0m
+  [4;36;1mMove Load (0.2ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+
+
+Processing MovesController#destroy (for 0.0.0.0 at 2010-03-28 15:20:20) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mMove Load (0.2ms)[0m   [0mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+  [4;36;1mMove Destroy (0.2ms)[0m   [0;1mDELETE FROM "moves" WHERE "id" = 953125641[0m
+Redirected to http://test.host/moves
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/moves/953125641]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "moves" [0m
+  [4;36;1mMove Load (0.2ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+
+
+Processing MovesController#edit (for 0.0.0.0 at 2010-03-28 15:20:20) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mMove Load (0.2ms)[0m   [0mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+Rendering template within layouts/moves
+Rendering moves/edit
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/moves/953125641/edit]
+
+
+Processing MovesController#index (for 0.0.0.0 at 2010-03-28 15:20:20) [GET]
+  [4;36;1mMove Load (0.3ms)[0m   [0;1mSELECT * FROM "moves" [0m
+Rendering template within layouts/moves
+Rendering moves/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/moves]
+
+
+Processing MovesController#new (for 0.0.0.0 at 2010-03-28 15:20:20) [GET]
+Rendering template within layouts/moves
+Rendering moves/new
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/moves/new]
+  [4;35;1mMove Load (0.2ms)[0m   [0mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+
+
+Processing MovesController#show (for 0.0.0.0 at 2010-03-28 15:20:20) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mMove Load (0.2ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+Rendering template within layouts/moves
+Rendering moves/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/moves/953125641]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "pieces" [0m
+
+
+Processing PiecesController#create (for 0.0.0.0 at 2010-03-28 15:20:20) [POST]
+  Parameters: {"piece"=>{}}
+Rendering template within layouts/pieces
+Rendering pieces/new
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://test.host/pieces?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "pieces" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "pieces" [0m
+  [4;36;1mPiece Load (0.2ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#destroy (for 0.0.0.0 at 2010-03-28 15:20:20) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+  [4;36;1mPiece Destroy (0.2ms)[0m   [0;1mDELETE FROM "pieces" WHERE "id" = 953125641[0m
+Redirected to http://test.host/pieces
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/pieces/953125641]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "pieces" [0m
+  [4;36;1mPiece Load (0.2ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#edit (for 0.0.0.0 at 2010-03-28 15:20:20) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+Rendering template within layouts/pieces
+Rendering pieces/edit
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/pieces/953125641/edit]
+
+
+Processing PiecesController#index (for 0.0.0.0 at 2010-03-28 15:20:20) [GET]
+  [4;36;1mPiece Load (0.3ms)[0m   [0;1mSELECT * FROM "pieces" [0m
+Rendering template within layouts/pieces
+Rendering pieces/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/pieces]
+
+
+Processing PiecesController#new (for 0.0.0.0 at 2010-03-28 15:20:20) [GET]
+Rendering template within layouts/pieces
+Rendering pieces/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pieces/new]
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#show (for 0.0.0.0 at 2010-03-28 15:20:20) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mPiece Load (0.2ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+Rendering template within layouts/pieces
+Rendering pieces/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pieces/953125641]
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#update (for 0.0.0.0 at 2010-03-28 15:20:20) [PUT]
+  Parameters: {"id"=>"953125641", "piece"=>{}}
+  [4;36;1mPiece Load (0.2ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+Redirected to http://test.host/pieces/953125641
+Completed in 53ms (DB: 0) | 302 Found [http://test.host/pieces/953125641?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+
+
+Processing GamesController#create (for 0.0.0.0 at 2010-03-28 15:20:45) [POST]
+  Parameters: {"game"=>{"uuid"=>"ABCD1234"}}
+  [4;35;1mGame Create (0.3ms)[0m   [0mINSERT INTO "games" ("created_at", "uuid", "updated_at", "active") VALUES('2010-03-28 19:20:45', 'ABCD1234', '2010-03-28 19:20:45', NULL)[0m
+Redirected to http://test.host/games/996332878
+Completed in 4ms (DB: 1) | 302 Found [http://test.host/games?game%5Buuid%5D=ABCD1234]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "games" [0m
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#destroy (for 0.0.0.0 at 2010-03-28 15:20:45) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+  [4;36;1mGame Destroy (0.1ms)[0m   [0;1mDELETE FROM "games" WHERE "id" = 953125641[0m
+Redirected to http://test.host/games
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/games/953125641]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "games" [0m
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#edit (for 0.0.0.0 at 2010-03-28 15:20:45) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+Rendering template within layouts/games
+Rendering games/edit
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/games/953125641/edit]
+
+
+Processing GamesController#index (for 0.0.0.0 at 2010-03-28 15:20:45) [GET]
+  [4;36;1mGame Load (0.2ms)[0m   [0;1mSELECT * FROM "games" [0m
+Rendering template within layouts/games
+Rendering games/index
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/games]
+
+
+Processing GamesController#new (for 0.0.0.0 at 2010-03-28 15:20:45) [GET]
+Rendering template within layouts/games
+Rendering games/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/games/new]
+  [4;35;1mGame Load (0.2ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#show (for 0.0.0.0 at 2010-03-28 15:20:45) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+Rendering template within layouts/games
+Rendering games/show
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/games/953125641]
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#update (for 0.0.0.0 at 2010-03-28 15:20:45) [PUT]
+  Parameters: {"game"=>{}, "id"=>"953125641"}
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+Redirected to http://test.host/games/953125641
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/games/953125641?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "moves" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "moves" [0m
+  [4;35;1mMove Load (0.2ms)[0m   [0mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+
+
+Processing MovesController#destroy (for 0.0.0.0 at 2010-03-28 15:20:45) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mMove Load (0.2ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+  [4;35;1mMove Destroy (0.2ms)[0m   [0mDELETE FROM "moves" WHERE "id" = 953125641[0m
+Redirected to http://test.host/moves
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/moves/953125641]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "moves" [0m
+  [4;35;1mMove Load (0.2ms)[0m   [0mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+
+
+Processing MovesController#edit (for 0.0.0.0 at 2010-03-28 15:20:45) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mMove Load (0.2ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+Rendering template within layouts/moves
+Rendering moves/edit
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/moves/953125641/edit]
+
+
+Processing MovesController#index (for 0.0.0.0 at 2010-03-28 15:20:45) [GET]
+  [4;35;1mMove Load (0.3ms)[0m   [0mSELECT * FROM "moves" [0m
+Rendering template within layouts/moves
+Rendering moves/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/moves]
+
+
+Processing MovesController#new (for 0.0.0.0 at 2010-03-28 15:20:45) [GET]
+Rendering template within layouts/moves
+Rendering moves/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/moves/new]
+  [4;36;1mMove Load (0.2ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+
+
+Processing MovesController#show (for 0.0.0.0 at 2010-03-28 15:20:45) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mMove Load (0.2ms)[0m   [0mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+Rendering template within layouts/moves
+Rendering moves/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/moves/953125641]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "pieces" [0m
+
+
+Processing PiecesController#create (for 0.0.0.0 at 2010-03-28 15:20:45) [POST]
+  Parameters: {"piece"=>{}}
+Rendering template within layouts/pieces
+Rendering pieces/new
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://test.host/pieces?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "pieces" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "pieces" [0m
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#destroy (for 0.0.0.0 at 2010-03-28 15:20:45) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mPiece Load (0.2ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+  [4;35;1mPiece Destroy (0.2ms)[0m   [0mDELETE FROM "pieces" WHERE "id" = 953125641[0m
+Redirected to http://test.host/pieces
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/pieces/953125641]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "pieces" [0m
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#edit (for 0.0.0.0 at 2010-03-28 15:20:45) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mPiece Load (0.2ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+Rendering template within layouts/pieces
+Rendering pieces/edit
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/pieces/953125641/edit]
+
+
+Processing PiecesController#index (for 0.0.0.0 at 2010-03-28 15:20:45) [GET]
+  [4;35;1mPiece Load (0.3ms)[0m   [0mSELECT * FROM "pieces" [0m
+Rendering template within layouts/pieces
+Rendering pieces/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/pieces]
+
+
+Processing PiecesController#new (for 0.0.0.0 at 2010-03-28 15:20:45) [GET]
+Rendering template within layouts/pieces
+Rendering pieces/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pieces/new]
+  [4;36;1mPiece Load (0.2ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#show (for 0.0.0.0 at 2010-03-28 15:20:45) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+Rendering template within layouts/pieces
+Rendering pieces/show
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/pieces/953125641]
+  [4;36;1mPiece Load (0.2ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#update (for 0.0.0.0 at 2010-03-28 15:20:45) [PUT]
+  Parameters: {"id"=>"953125641", "piece"=>{}}
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+Redirected to http://test.host/pieces/953125641
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/pieces/953125641?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+
+
+Processing GamesController#create (for 0.0.0.0 at 2010-03-28 15:21:14) [POST]
+  Parameters: {"game"=>{"uuid"=>"ABCD1234"}}
+  [4;35;1mGame Create (0.3ms)[0m   [0mINSERT INTO "games" ("created_at", "uuid", "updated_at", "active") VALUES('2010-03-28 19:21:14', 'ABCD1234', '2010-03-28 19:21:14', NULL)[0m
+Redirected to http://test.host/games/996332878
+Completed in 5ms (DB: 1) | 302 Found [http://test.host/games?game%5Buuid%5D=ABCD1234]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "games" [0m
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#destroy (for 0.0.0.0 at 2010-03-28 15:21:14) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+  [4;36;1mGame Destroy (0.1ms)[0m   [0;1mDELETE FROM "games" WHERE "id" = 953125641[0m
+Redirected to http://test.host/games
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/games/953125641]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "games" [0m
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#edit (for 0.0.0.0 at 2010-03-28 15:21:14) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+Rendering template within layouts/games
+Rendering games/edit
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/games/953125641/edit]
+
+
+Processing GamesController#index (for 0.0.0.0 at 2010-03-28 15:21:14) [GET]
+  [4;36;1mGame Load (0.2ms)[0m   [0;1mSELECT * FROM "games" [0m
+Rendering template within layouts/games
+Rendering games/index
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/games]
+
+
+Processing GamesController#new (for 0.0.0.0 at 2010-03-28 15:21:14) [GET]
+Rendering template within layouts/games
+Rendering games/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/games/new]
+  [4;35;1mGame Load (0.2ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#show (for 0.0.0.0 at 2010-03-28 15:21:14) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+Rendering template within layouts/games
+Rendering games/show
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/games/953125641]
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#update (for 0.0.0.0 at 2010-03-28 15:21:14) [PUT]
+  Parameters: {"game"=>{}, "id"=>"953125641"}
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+Redirected to http://test.host/games/953125641
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/games/953125641?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "moves" [0m
+  [4;36;1mMove Create (0.2ms)[0m   [0;1mINSERT INTO "moves" ("angle", "created_at", "x", "y", "updated_at", "power", "game_id", "attempts", "score_differential", "max_multiplier") VALUES(1.0, '2010-03-28 19:21:14', 1.0, 1.0, '2010-03-28 19:21:14', 1.0, 1, 1, 0, 1)[0m
+
+
+Processing MovesController#create (for 0.0.0.0 at 2010-03-28 15:21:14) [POST]
+  Parameters: {"move"=>#<Move id: 996332878, game_id: 1, x: 1.0, y: 1.0, angle: 1.0, power: 1.0, attempts: 1, score_differential: 0, max_multiplier: 1, created_at: "2010-03-28 19:21:14", updated_at: "2010-03-28 19:21:14">}
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "moves" [0m
+  [4;36;1mMove Load (0.2ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+
+
+Processing MovesController#destroy (for 0.0.0.0 at 2010-03-28 15:21:14) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mMove Load (0.2ms)[0m   [0mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+  [4;36;1mMove Destroy (0.1ms)[0m   [0;1mDELETE FROM "moves" WHERE "id" = 953125641[0m
+Redirected to http://test.host/moves
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/moves/953125641]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "moves" [0m
+  [4;36;1mMove Load (0.2ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+
+
+Processing MovesController#edit (for 0.0.0.0 at 2010-03-28 15:21:14) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mMove Load (0.2ms)[0m   [0mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+Rendering template within layouts/moves
+Rendering moves/edit
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/moves/953125641/edit]
+
+
+Processing MovesController#index (for 0.0.0.0 at 2010-03-28 15:21:14) [GET]
+  [4;36;1mMove Load (0.3ms)[0m   [0;1mSELECT * FROM "moves" [0m
+Rendering template within layouts/moves
+Rendering moves/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/moves]
+
+
+Processing MovesController#new (for 0.0.0.0 at 2010-03-28 15:21:14) [GET]
+Rendering template within layouts/moves
+Rendering moves/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/moves/new]
+  [4;35;1mMove Load (0.2ms)[0m   [0mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+
+
+Processing MovesController#show (for 0.0.0.0 at 2010-03-28 15:21:14) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mMove Load (0.2ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+Rendering template within layouts/moves
+Rendering moves/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/moves/953125641]
+  [4;35;1mMove Create (0.3ms)[0m   [0mINSERT INTO "moves" ("angle", "created_at", "x", "y", "updated_at", "power", "game_id", "attempts", "score_differential", "max_multiplier") VALUES(1.0, '2010-03-28 19:21:14', 1.0, 1.0, '2010-03-28 19:21:14', 1.0, 1, 1, 0, 1)[0m
+
+
+Processing MovesController#update (for 0.0.0.0 at 2010-03-28 15:21:14) [PUT]
+  Parameters: {"id"=>"996332878", "move"=>{"angle"=>1, "x"=>1, "y"=>1, "power"=>1, "game_id"=>1, "attempts"=>1, "score_differential"=>0, "max_multiplier"=>1}}
+  [4;36;1mMove Load (0.2ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 996332878) [0m
+Redirected to http://test.host/moves/996332878
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/moves/996332878?move%5Bangle%5D=1&move%5Battempts%5D=1&move%5Bgame_id%5D=1&move%5Bmax_multiplier%5D=1&move%5Bpower%5D=1&move%5Bscore_differential%5D=0&move%5Bx%5D=1&move%5By%5D=1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "pieces" [0m
+
+
+Processing PiecesController#create (for 0.0.0.0 at 2010-03-28 15:21:14) [POST]
+  Parameters: {"piece"=>{}}
+Rendering template within layouts/pieces
+Rendering pieces/new
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://test.host/pieces?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "pieces" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "pieces" [0m
+  [4;36;1mPiece Load (0.2ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#destroy (for 0.0.0.0 at 2010-03-28 15:21:14) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+  [4;36;1mPiece Destroy (0.2ms)[0m   [0;1mDELETE FROM "pieces" WHERE "id" = 953125641[0m
+Redirected to http://test.host/pieces
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/pieces/953125641]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "pieces" [0m
+  [4;36;1mPiece Load (0.2ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#edit (for 0.0.0.0 at 2010-03-28 15:21:14) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+Rendering template within layouts/pieces
+Rendering pieces/edit
+Completed in 3ms (View: 3, DB: 1) | 200 OK [http://test.host/pieces/953125641/edit]
+
+
+Processing PiecesController#index (for 0.0.0.0 at 2010-03-28 15:21:14) [GET]
+  [4;36;1mPiece Load (0.3ms)[0m   [0;1mSELECT * FROM "pieces" [0m
+Rendering template within layouts/pieces
+Rendering pieces/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/pieces]
+
+
+Processing PiecesController#new (for 0.0.0.0 at 2010-03-28 15:21:14) [GET]
+Rendering template within layouts/pieces
+Rendering pieces/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pieces/new]
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#show (for 0.0.0.0 at 2010-03-28 15:21:14) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mPiece Load (0.2ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+Rendering template within layouts/pieces
+Rendering pieces/show
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/pieces/953125641]
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#update (for 0.0.0.0 at 2010-03-28 15:21:14) [PUT]
+  Parameters: {"id"=>"953125641", "piece"=>{}}
+  [4;36;1mPiece Load (0.1ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+Redirected to http://test.host/pieces/953125641
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/pieces/953125641?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+
+
+Processing GamesController#create (for 0.0.0.0 at 2010-03-28 15:21:45) [POST]
+  Parameters: {"game"=>{"uuid"=>"ABCD1234"}}
+  [4;35;1mGame Create (0.4ms)[0m   [0mINSERT INTO "games" ("created_at", "uuid", "updated_at", "active") VALUES('2010-03-28 19:21:45', 'ABCD1234', '2010-03-28 19:21:45', NULL)[0m
+Redirected to http://test.host/games/996332878
+Completed in 5ms (DB: 2) | 302 Found [http://test.host/games?game%5Buuid%5D=ABCD1234]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "games" [0m
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#destroy (for 0.0.0.0 at 2010-03-28 15:21:45) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+  [4;36;1mGame Destroy (0.1ms)[0m   [0;1mDELETE FROM "games" WHERE "id" = 953125641[0m
+Redirected to http://test.host/games
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/games/953125641]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "games" [0m
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#edit (for 0.0.0.0 at 2010-03-28 15:21:45) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+Rendering template within layouts/games
+Rendering games/edit
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/games/953125641/edit]
+
+
+Processing GamesController#index (for 0.0.0.0 at 2010-03-28 15:21:45) [GET]
+  [4;36;1mGame Load (0.2ms)[0m   [0;1mSELECT * FROM "games" [0m
+Rendering template within layouts/games
+Rendering games/index
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/games]
+
+
+Processing GamesController#new (for 0.0.0.0 at 2010-03-28 15:21:45) [GET]
+Rendering template within layouts/games
+Rendering games/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/games/new]
+  [4;35;1mGame Load (0.2ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#show (for 0.0.0.0 at 2010-03-28 15:21:45) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+Rendering template within layouts/games
+Rendering games/show
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/games/953125641]
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#update (for 0.0.0.0 at 2010-03-28 15:21:45) [PUT]
+  Parameters: {"game"=>{}, "id"=>"953125641"}
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+Redirected to http://test.host/games/953125641
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/games/953125641?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "moves" [0m
+
+
+Processing MovesController#create (for 0.0.0.0 at 2010-03-28 15:21:45) [POST]
+  Parameters: {"move"=>{"angle"=>1, "x"=>1, "y"=>1, "power"=>1, "game_id"=>1, "attempts"=>1, "score_differential"=>0, "max_multiplier"=>1}}
+  [4;36;1mMove Create (0.3ms)[0m   [0;1mINSERT INTO "moves" ("angle", "created_at", "x", "y", "updated_at", "power", "game_id", "attempts", "score_differential", "max_multiplier") VALUES(1.0, '2010-03-28 19:21:45', 1.0, 1.0, '2010-03-28 19:21:45', 1.0, 1, 1, 0, 1)[0m
+Redirected to http://test.host/moves/996332878
+Completed in 4ms (DB: 0) | 302 Found [http://test.host/moves?move%5Bangle%5D=1&move%5Battempts%5D=1&move%5Bgame_id%5D=1&move%5Bmax_multiplier%5D=1&move%5Bpower%5D=1&move%5Bscore_differential%5D=0&move%5Bx%5D=1&move%5By%5D=1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "moves" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "moves" [0m
+  [4;35;1mMove Load (0.2ms)[0m   [0mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+
+
+Processing MovesController#destroy (for 0.0.0.0 at 2010-03-28 15:21:45) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mMove Load (0.2ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+  [4;35;1mMove Destroy (0.1ms)[0m   [0mDELETE FROM "moves" WHERE "id" = 953125641[0m
+Redirected to http://test.host/moves
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/moves/953125641]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "moves" [0m
+  [4;35;1mMove Load (0.2ms)[0m   [0mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+
+
+Processing MovesController#edit (for 0.0.0.0 at 2010-03-28 15:21:45) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mMove Load (0.2ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+Rendering template within layouts/moves
+Rendering moves/edit
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/moves/953125641/edit]
+
+
+Processing MovesController#index (for 0.0.0.0 at 2010-03-28 15:21:45) [GET]
+  [4;35;1mMove Load (0.3ms)[0m   [0mSELECT * FROM "moves" [0m
+Rendering template within layouts/moves
+Rendering moves/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/moves]
+
+
+Processing MovesController#new (for 0.0.0.0 at 2010-03-28 15:21:45) [GET]
+Rendering template within layouts/moves
+Rendering moves/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/moves/new]
+  [4;36;1mMove Load (0.2ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+
+
+Processing MovesController#show (for 0.0.0.0 at 2010-03-28 15:21:45) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mMove Load (0.2ms)[0m   [0mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+Rendering template within layouts/moves
+Rendering moves/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/moves/953125641]
+  [4;36;1mMove Create (0.3ms)[0m   [0;1mINSERT INTO "moves" ("angle", "created_at", "x", "y", "updated_at", "power", "game_id", "attempts", "score_differential", "max_multiplier") VALUES(1.0, '2010-03-28 19:21:45', 1.0, 1.0, '2010-03-28 19:21:45', 1.0, 1, 1, 0, 1)[0m
+
+
+Processing MovesController#update (for 0.0.0.0 at 2010-03-28 15:21:45) [PUT]
+  Parameters: {"id"=>"996332878", "move"=>{"angle"=>1, "x"=>1, "y"=>1, "power"=>1, "game_id"=>1, "attempts"=>1, "score_differential"=>0, "max_multiplier"=>1}}
+  [4;35;1mMove Load (0.2ms)[0m   [0mSELECT * FROM "moves" WHERE ("moves"."id" = 996332878) [0m
+Redirected to http://test.host/moves/996332878
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/moves/996332878?move%5Bangle%5D=1&move%5Battempts%5D=1&move%5Bgame_id%5D=1&move%5Bmax_multiplier%5D=1&move%5Bpower%5D=1&move%5Bscore_differential%5D=0&move%5Bx%5D=1&move%5By%5D=1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "pieces" [0m
+
+
+Processing PiecesController#create (for 0.0.0.0 at 2010-03-28 15:21:45) [POST]
+  Parameters: {"piece"=>{}}
+Rendering template within layouts/pieces
+Rendering pieces/new
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://test.host/pieces?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "pieces" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "pieces" [0m
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#destroy (for 0.0.0.0 at 2010-03-28 15:21:45) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mPiece Load (0.2ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+  [4;35;1mPiece Destroy (0.2ms)[0m   [0mDELETE FROM "pieces" WHERE "id" = 953125641[0m
+Redirected to http://test.host/pieces
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/pieces/953125641]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "pieces" [0m
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#edit (for 0.0.0.0 at 2010-03-28 15:21:45) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mPiece Load (0.2ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+Rendering template within layouts/pieces
+Rendering pieces/edit
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/pieces/953125641/edit]
+
+
+Processing PiecesController#index (for 0.0.0.0 at 2010-03-28 15:21:45) [GET]
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" [0m
+Rendering template within layouts/pieces
+Rendering pieces/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/pieces]
+
+
+Processing PiecesController#new (for 0.0.0.0 at 2010-03-28 15:21:45) [GET]
+Rendering template within layouts/pieces
+Rendering pieces/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pieces/new]
+  [4;36;1mPiece Load (0.2ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#show (for 0.0.0.0 at 2010-03-28 15:21:45) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+Rendering template within layouts/pieces
+Rendering pieces/show
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/pieces/953125641]
+  [4;36;1mPiece Load (0.2ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#update (for 0.0.0.0 at 2010-03-28 15:21:45) [PUT]
+  Parameters: {"id"=>"953125641", "piece"=>{}}
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+Redirected to http://test.host/pieces/953125641
+Completed in 53ms (DB: 0) | 302 Found [http://test.host/pieces/953125641?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+
+
+Processing GamesController#create (for 0.0.0.0 at 2010-03-28 15:22:32) [POST]
+  Parameters: {"game"=>{"uuid"=>"ABCD1234"}}
+  [4;35;1mGame Create (0.4ms)[0m   [0mINSERT INTO "games" ("created_at", "uuid", "updated_at", "active") VALUES('2010-03-28 19:22:32', 'ABCD1234', '2010-03-28 19:22:32', NULL)[0m
+Redirected to http://test.host/games/996332878
+Completed in 4ms (DB: 2) | 302 Found [http://test.host/games?game%5Buuid%5D=ABCD1234]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "games" [0m
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#destroy (for 0.0.0.0 at 2010-03-28 15:22:32) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+  [4;36;1mGame Destroy (0.1ms)[0m   [0;1mDELETE FROM "games" WHERE "id" = 953125641[0m
+Redirected to http://test.host/games
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/games/953125641]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "games" [0m
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#edit (for 0.0.0.0 at 2010-03-28 15:22:32) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+Rendering template within layouts/games
+Rendering games/edit
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/games/953125641/edit]
+
+
+Processing GamesController#index (for 0.0.0.0 at 2010-03-28 15:22:32) [GET]
+  [4;36;1mGame Load (0.2ms)[0m   [0;1mSELECT * FROM "games" [0m
+Rendering template within layouts/games
+Rendering games/index
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/games]
+
+
+Processing GamesController#new (for 0.0.0.0 at 2010-03-28 15:22:32) [GET]
+Rendering template within layouts/games
+Rendering games/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/games/new]
+  [4;35;1mGame Load (0.2ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#show (for 0.0.0.0 at 2010-03-28 15:22:32) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+Rendering template within layouts/games
+Rendering games/show
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/games/953125641]
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#update (for 0.0.0.0 at 2010-03-28 15:22:32) [PUT]
+  Parameters: {"game"=>{}, "id"=>"953125641"}
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+Redirected to http://test.host/games/953125641
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/games/953125641?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "moves" [0m
+
+
+Processing MovesController#create (for 0.0.0.0 at 2010-03-28 15:22:32) [POST]
+  Parameters: {"move"=>{"angle"=>1, "x"=>1, "y"=>1, "power"=>1, "game_id"=>1, "attempts"=>1, "score_differential"=>0, "max_multiplier"=>1}}
+  [4;36;1mMove Create (0.3ms)[0m   [0;1mINSERT INTO "moves" ("angle", "created_at", "x", "y", "updated_at", "power", "game_id", "attempts", "score_differential", "max_multiplier") VALUES(1.0, '2010-03-28 19:22:32', 1.0, 1.0, '2010-03-28 19:22:32', 1.0, 1, 1, 0, 1)[0m
+Redirected to http://test.host/moves/996332878
+Completed in 4ms (DB: 0) | 302 Found [http://test.host/moves?move%5Bangle%5D=1&move%5Battempts%5D=1&move%5Bgame_id%5D=1&move%5Bmax_multiplier%5D=1&move%5Bpower%5D=1&move%5Bscore_differential%5D=0&move%5Bx%5D=1&move%5By%5D=1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "moves" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "moves" [0m
+  [4;35;1mMove Load (0.2ms)[0m   [0mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+
+
+Processing MovesController#destroy (for 0.0.0.0 at 2010-03-28 15:22:32) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mMove Load (0.2ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+  [4;35;1mMove Destroy (0.2ms)[0m   [0mDELETE FROM "moves" WHERE "id" = 953125641[0m
+Redirected to http://test.host/moves
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/moves/953125641]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "moves" [0m
+  [4;35;1mMove Load (0.2ms)[0m   [0mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+
+
+Processing MovesController#edit (for 0.0.0.0 at 2010-03-28 15:22:32) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mMove Load (0.2ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+Rendering template within layouts/moves
+Rendering moves/edit
+Completed in 4ms (View: 4, DB: 1) | 200 OK [http://test.host/moves/953125641/edit]
+
+
+Processing MovesController#index (for 0.0.0.0 at 2010-03-28 15:22:32) [GET]
+  [4;35;1mMove Load (0.3ms)[0m   [0mSELECT * FROM "moves" [0m
+Rendering template within layouts/moves
+Rendering moves/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/moves]
+
+
+Processing MovesController#new (for 0.0.0.0 at 2010-03-28 15:22:32) [GET]
+Rendering template within layouts/moves
+Rendering moves/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/moves/new]
+  [4;36;1mMove Load (0.2ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+
+
+Processing MovesController#show (for 0.0.0.0 at 2010-03-28 15:22:32) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mMove Load (0.2ms)[0m   [0mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+Rendering template within layouts/moves
+Rendering moves/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/moves/953125641]
+  [4;36;1mMove Create (0.3ms)[0m   [0;1mINSERT INTO "moves" ("angle", "created_at", "x", "y", "updated_at", "power", "game_id", "attempts", "score_differential", "max_multiplier") VALUES(1.0, '2010-03-28 19:22:32', 1.0, 1.0, '2010-03-28 19:22:32', 1.0, 1, 1, 0, 1)[0m
+
+
+Processing MovesController#update (for 0.0.0.0 at 2010-03-28 15:22:32) [PUT]
+  Parameters: {"id"=>"996332878", "move"=>{"angle"=>1, "x"=>1, "y"=>1, "power"=>1, "game_id"=>1, "attempts"=>1, "score_differential"=>0, "max_multiplier"=>1}}
+  [4;35;1mMove Load (0.2ms)[0m   [0mSELECT * FROM "moves" WHERE ("moves"."id" = 996332878) [0m
+Redirected to http://test.host/moves/996332878
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/moves/996332878?move%5Bangle%5D=1&move%5Battempts%5D=1&move%5Bgame_id%5D=1&move%5Bmax_multiplier%5D=1&move%5Bpower%5D=1&move%5Bscore_differential%5D=0&move%5Bx%5D=1&move%5By%5D=1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "pieces" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "pieces" [0m
+  [4;36;1mPiece Load (0.2ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#destroy (for 0.0.0.0 at 2010-03-28 15:22:32) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+  [4;36;1mPiece Destroy (0.2ms)[0m   [0;1mDELETE FROM "pieces" WHERE "id" = 953125641[0m
+Redirected to http://test.host/pieces
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/pieces/953125641]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "pieces" [0m
+  [4;36;1mPiece Load (0.2ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#edit (for 0.0.0.0 at 2010-03-28 15:22:32) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+Rendering template within layouts/pieces
+Rendering pieces/edit
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://test.host/pieces/953125641/edit]
+
+
+Processing PiecesController#index (for 0.0.0.0 at 2010-03-28 15:22:32) [GET]
+  [4;36;1mPiece Load (0.3ms)[0m   [0;1mSELECT * FROM "pieces" [0m
+Rendering template within layouts/pieces
+Rendering pieces/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/pieces]
+
+
+Processing PiecesController#new (for 0.0.0.0 at 2010-03-28 15:22:32) [GET]
+Rendering template within layouts/pieces
+Rendering pieces/new
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/pieces/new]
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#show (for 0.0.0.0 at 2010-03-28 15:22:32) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mPiece Load (0.2ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+Rendering template within layouts/pieces
+Rendering pieces/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pieces/953125641]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+
+
+Processing GamesController#create (for 0.0.0.0 at 2010-03-28 15:23:15) [POST]
+  Parameters: {"game"=>{"uuid"=>"ABCD1234"}}
+  [4;35;1mGame Create (0.4ms)[0m   [0mINSERT INTO "games" ("created_at", "uuid", "updated_at", "active") VALUES('2010-03-28 19:23:15', 'ABCD1234', '2010-03-28 19:23:15', NULL)[0m
+Redirected to http://test.host/games/996332878
+Completed in 5ms (DB: 2) | 302 Found [http://test.host/games?game%5Buuid%5D=ABCD1234]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "games" [0m
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#destroy (for 0.0.0.0 at 2010-03-28 15:23:15) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+  [4;36;1mGame Destroy (0.1ms)[0m   [0;1mDELETE FROM "games" WHERE "id" = 953125641[0m
+Redirected to http://test.host/games
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/games/953125641]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "games" [0m
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#edit (for 0.0.0.0 at 2010-03-28 15:23:15) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+Rendering template within layouts/games
+Rendering games/edit
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/games/953125641/edit]
+
+
+Processing GamesController#index (for 0.0.0.0 at 2010-03-28 15:23:15) [GET]
+  [4;36;1mGame Load (0.2ms)[0m   [0;1mSELECT * FROM "games" [0m
+Rendering template within layouts/games
+Rendering games/index
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/games]
+
+
+Processing GamesController#new (for 0.0.0.0 at 2010-03-28 15:23:15) [GET]
+Rendering template within layouts/games
+Rendering games/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/games/new]
+  [4;35;1mGame Load (0.2ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#show (for 0.0.0.0 at 2010-03-28 15:23:15) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+Rendering template within layouts/games
+Rendering games/show
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/games/953125641]
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#update (for 0.0.0.0 at 2010-03-28 15:23:15) [PUT]
+  Parameters: {"game"=>{}, "id"=>"953125641"}
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+Redirected to http://test.host/games/953125641
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/games/953125641?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "moves" [0m
+
+
+Processing MovesController#create (for 0.0.0.0 at 2010-03-28 15:23:15) [POST]
+  Parameters: {"move"=>{"angle"=>1, "x"=>1, "y"=>1, "power"=>1, "game_id"=>1, "attempts"=>1, "score_differential"=>0, "max_multiplier"=>1}}
+  [4;36;1mMove Create (0.3ms)[0m   [0;1mINSERT INTO "moves" ("angle", "created_at", "x", "y", "updated_at", "power", "game_id", "attempts", "score_differential", "max_multiplier") VALUES(1.0, '2010-03-28 19:23:16', 1.0, 1.0, '2010-03-28 19:23:16', 1.0, 1, 1, 0, 1)[0m
+Redirected to http://test.host/moves/996332878
+Completed in 4ms (DB: 0) | 302 Found [http://test.host/moves?move%5Bangle%5D=1&move%5Battempts%5D=1&move%5Bgame_id%5D=1&move%5Bmax_multiplier%5D=1&move%5Bpower%5D=1&move%5Bscore_differential%5D=0&move%5Bx%5D=1&move%5By%5D=1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "moves" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "moves" [0m
+  [4;35;1mMove Load (0.2ms)[0m   [0mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+
+
+Processing MovesController#destroy (for 0.0.0.0 at 2010-03-28 15:23:16) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mMove Load (0.2ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+  [4;35;1mMove Destroy (0.1ms)[0m   [0mDELETE FROM "moves" WHERE "id" = 953125641[0m
+Redirected to http://test.host/moves
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/moves/953125641]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "moves" [0m
+  [4;35;1mMove Load (0.2ms)[0m   [0mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+
+
+Processing MovesController#edit (for 0.0.0.0 at 2010-03-28 15:23:16) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mMove Load (0.2ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+Rendering template within layouts/moves
+Rendering moves/edit
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/moves/953125641/edit]
+
+
+Processing MovesController#index (for 0.0.0.0 at 2010-03-28 15:23:16) [GET]
+  [4;35;1mMove Load (0.3ms)[0m   [0mSELECT * FROM "moves" [0m
+Rendering template within layouts/moves
+Rendering moves/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/moves]
+
+
+Processing MovesController#new (for 0.0.0.0 at 2010-03-28 15:23:16) [GET]
+Rendering template within layouts/moves
+Rendering moves/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/moves/new]
+  [4;36;1mMove Load (0.2ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+
+
+Processing MovesController#show (for 0.0.0.0 at 2010-03-28 15:23:16) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mMove Load (0.2ms)[0m   [0mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+Rendering template within layouts/moves
+Rendering moves/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/moves/953125641]
+  [4;36;1mMove Create (0.2ms)[0m   [0;1mINSERT INTO "moves" ("angle", "created_at", "x", "y", "updated_at", "power", "game_id", "attempts", "score_differential", "max_multiplier") VALUES(1.0, '2010-03-28 19:23:16', 1.0, 1.0, '2010-03-28 19:23:16', 1.0, 1, 1, 0, 1)[0m
+
+
+Processing MovesController#update (for 0.0.0.0 at 2010-03-28 15:23:16) [PUT]
+  Parameters: {"id"=>"996332878", "move"=>{"angle"=>1, "x"=>1, "y"=>1, "power"=>1, "game_id"=>1, "attempts"=>1, "score_differential"=>0, "max_multiplier"=>1}}
+  [4;35;1mMove Load (0.2ms)[0m   [0mSELECT * FROM "moves" WHERE ("moves"."id" = 996332878) [0m
+Redirected to http://test.host/moves/996332878
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/moves/996332878?move%5Bangle%5D=1&move%5Battempts%5D=1&move%5Bgame_id%5D=1&move%5Bmax_multiplier%5D=1&move%5Bpower%5D=1&move%5Bscore_differential%5D=0&move%5Bx%5D=1&move%5By%5D=1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "pieces" [0m
+
+
+Processing PiecesController#create (for 0.0.0.0 at 2010-03-28 15:23:16) [POST]
+  Parameters: {"piece"=>{"move_id"=>1, "radius"=>10, "x"=>1, "y"=>1, "count"=>1}}
+  [4;35;1mPiece Create (0.2ms)[0m   [0mINSERT INTO "pieces" ("move_id", "radius", "created_at", "x", "y", "updated_at", "count") VALUES(1, 10.0, '2010-03-28 19:23:16', 1.0, 1.0, '2010-03-28 19:23:16', 1)[0m
+Redirected to http://test.host/pieces/996332878
+Completed in 4ms (DB: 0) | 302 Found [http://test.host/pieces?piece%5Bcount%5D=1&piece%5Bmove_id%5D=1&piece%5Bradius%5D=10&piece%5Bx%5D=1&piece%5By%5D=1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "pieces" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "pieces" [0m
+  [4;36;1mPiece Load (0.2ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#destroy (for 0.0.0.0 at 2010-03-28 15:23:16) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+  [4;36;1mPiece Destroy (0.1ms)[0m   [0;1mDELETE FROM "pieces" WHERE "id" = 953125641[0m
+Redirected to http://test.host/pieces
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/pieces/953125641]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "pieces" [0m
+  [4;36;1mPiece Load (0.2ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#edit (for 0.0.0.0 at 2010-03-28 15:23:16) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+Rendering template within layouts/pieces
+Rendering pieces/edit
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/pieces/953125641/edit]
+
+
+Processing PiecesController#index (for 0.0.0.0 at 2010-03-28 15:23:16) [GET]
+  [4;36;1mPiece Load (0.3ms)[0m   [0;1mSELECT * FROM "pieces" [0m
+Rendering template within layouts/pieces
+Rendering pieces/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/pieces]
+
+
+Processing PiecesController#new (for 0.0.0.0 at 2010-03-28 15:23:16) [GET]
+Rendering template within layouts/pieces
+Rendering pieces/new
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/pieces/new]
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#show (for 0.0.0.0 at 2010-03-28 15:23:16) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mPiece Load (0.2ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+Rendering template within layouts/pieces
+Rendering pieces/show
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/pieces/953125641]
+  [4;35;1mPiece Create (0.3ms)[0m   [0mINSERT INTO "pieces" ("move_id", "radius", "created_at", "x", "y", "updated_at", "count") VALUES(1, 10.0, '2010-03-28 19:23:16', 1.0, 1.0, '2010-03-28 19:23:16', 1)[0m
+
+
+Processing PiecesController#update (for 0.0.0.0 at 2010-03-28 15:23:16) [PUT]
+  Parameters: {"id"=>"996332878", "piece"=>{"move_id"=>1, "radius"=>10, "x"=>1, "y"=>1, "count"=>1}}
+  [4;36;1mPiece Load (0.2ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 996332878) [0m
+Redirected to http://test.host/pieces/996332878
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/pieces/996332878?piece%5Bcount%5D=1&piece%5Bmove_id%5D=1&piece%5Bradius%5D=10&piece%5Bx%5D=1&piece%5By%5D=1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+
+
+Processing GamesController#create (for 0.0.0.0 at 2010-03-28 18:24:54) [POST]
+  Parameters: {"game"=>{"uuid"=>"ABCD1234"}}
+  [4;35;1mGame Create (0.4ms)[0m   [0mINSERT INTO "games" ("created_at", "uuid", "updated_at", "active") VALUES('2010-03-28 22:24:54', 'ABCD1234', '2010-03-28 22:24:54', NULL)[0m
+Redirected to http://test.host/games/996332878
+Completed in 5ms (DB: 2) | 302 Found [http://test.host/games?game%5Buuid%5D=ABCD1234]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "games" [0m
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#destroy (for 0.0.0.0 at 2010-03-28 18:24:54) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+  [4;36;1mGame Destroy (0.2ms)[0m   [0;1mDELETE FROM "games" WHERE "id" = 953125641[0m
+Redirected to http://test.host/games
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/games/953125641]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "games" [0m
+  [4;36;1mGame Load (0.2ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#edit (for 0.0.0.0 at 2010-03-28 18:24:54) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+Rendering template within layouts/games
+Rendering games/edit
+Completed in 13ms (View: 13, DB: 0) | 200 OK [http://test.host/games/953125641/edit]
+
+
+Processing GamesController#index (for 0.0.0.0 at 2010-03-28 18:24:54) [GET]
+  [4;36;1mGame Load (0.3ms)[0m   [0;1mSELECT * FROM "games" [0m
+Rendering template within layouts/games
+Rendering games/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/games]
+
+
+Processing GamesController#new (for 0.0.0.0 at 2010-03-28 18:24:54) [GET]
+Rendering template within layouts/games
+Rendering games/new
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/games/new]
+  [4;35;1mGame Load (0.2ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#show (for 0.0.0.0 at 2010-03-28 18:24:54) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+  [4;35;1mMove Load (0.1ms)[0m   [0mSELECT "moves".* FROM "moves" WHERE ("moves".game_id = 953125641) [0m
+Rendering template within layouts/games
+Rendering games/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/games/953125641]
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#update (for 0.0.0.0 at 2010-03-28 18:24:54) [PUT]
+  Parameters: {"game"=>{}, "id"=>"953125641"}
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+Redirected to http://test.host/games/953125641
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/games/953125641?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "moves" [0m
+
+
+Processing MovesController#create (for 0.0.0.0 at 2010-03-28 18:24:54) [POST]
+  Parameters: {"move"=>{"angle"=>1, "x"=>1, "y"=>1, "power"=>1, "game_id"=>1, "attempts"=>1, "score_differential"=>0, "max_multiplier"=>1}}
+  [4;35;1mMove Create (0.3ms)[0m   [0mINSERT INTO "moves" ("angle", "created_at", "x", "y", "updated_at", "power", "game_id", "attempts", "score_differential", "max_multiplier") VALUES(1.0, '2010-03-28 22:24:54', 1.0, 1.0, '2010-03-28 22:24:54', 1.0, 1, 1, 0, 1)[0m
+Redirected to http://test.host/moves/996332878
+Completed in 4ms (DB: 0) | 302 Found [http://test.host/moves?move%5Bangle%5D=1&move%5Battempts%5D=1&move%5Bgame_id%5D=1&move%5Bmax_multiplier%5D=1&move%5Bpower%5D=1&move%5Bscore_differential%5D=0&move%5Bx%5D=1&move%5By%5D=1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "moves" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "moves" [0m
+  [4;36;1mMove Load (0.2ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+
+
+Processing MovesController#destroy (for 0.0.0.0 at 2010-03-28 18:24:54) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mMove Load (0.2ms)[0m   [0mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+  [4;36;1mMove Destroy (0.2ms)[0m   [0;1mDELETE FROM "moves" WHERE "id" = 953125641[0m
+Redirected to http://test.host/moves
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/moves/953125641]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "moves" [0m
+  [4;36;1mMove Load (0.3ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+
+
+Processing MovesController#edit (for 0.0.0.0 at 2010-03-28 18:24:54) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mMove Load (0.2ms)[0m   [0mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+Rendering template within layouts/moves
+Rendering moves/edit
+Completed in 4ms (View: 4, DB: 1) | 200 OK [http://test.host/moves/953125641/edit]
+
+
+Processing MovesController#index (for 0.0.0.0 at 2010-03-28 18:24:54) [GET]
+  [4;36;1mMove Load (0.3ms)[0m   [0;1mSELECT * FROM "moves" [0m
+Rendering template within layouts/moves
+Rendering moves/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/moves]
+
+
+Processing MovesController#new (for 0.0.0.0 at 2010-03-28 18:24:54) [GET]
+Rendering template within layouts/moves
+Rendering moves/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/moves/new]
+  [4;35;1mMove Load (0.2ms)[0m   [0mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+
+
+Processing MovesController#show (for 0.0.0.0 at 2010-03-28 18:24:54) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mMove Load (0.2ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+Rendering template within layouts/moves
+Rendering moves/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/moves/953125641]
+  [4;35;1mMove Create (0.3ms)[0m   [0mINSERT INTO "moves" ("angle", "created_at", "x", "y", "updated_at", "power", "game_id", "attempts", "score_differential", "max_multiplier") VALUES(1.0, '2010-03-28 22:24:54', 1.0, 1.0, '2010-03-28 22:24:54', 1.0, 1, 1, 0, 1)[0m
+
+
+Processing MovesController#update (for 0.0.0.0 at 2010-03-28 18:24:54) [PUT]
+  Parameters: {"id"=>"996332878", "move"=>{"angle"=>1, "x"=>1, "y"=>1, "power"=>1, "game_id"=>1, "attempts"=>1, "score_differential"=>0, "max_multiplier"=>1}}
+  [4;36;1mMove Load (0.2ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 996332878) [0m
+Redirected to http://test.host/moves/996332878
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/moves/996332878?move%5Bangle%5D=1&move%5Battempts%5D=1&move%5Bgame_id%5D=1&move%5Bmax_multiplier%5D=1&move%5Bpower%5D=1&move%5Bscore_differential%5D=0&move%5Bx%5D=1&move%5By%5D=1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "pieces" [0m
+
+
+Processing PiecesController#create (for 0.0.0.0 at 2010-03-28 18:24:54) [POST]
+  Parameters: {"piece"=>{"move_id"=>1, "radius"=>10, "x"=>1, "y"=>1, "count"=>1}}
+  [4;36;1mPiece Create (0.3ms)[0m   [0;1mINSERT INTO "pieces" ("move_id", "radius", "created_at", "x", "y", "updated_at", "count") VALUES(1, 10.0, '2010-03-28 22:24:54', 1.0, 1.0, '2010-03-28 22:24:54', 1)[0m
+Redirected to http://test.host/pieces/996332878
+Completed in 4ms (DB: 0) | 302 Found [http://test.host/pieces?piece%5Bcount%5D=1&piece%5Bmove_id%5D=1&piece%5Bradius%5D=10&piece%5Bx%5D=1&piece%5By%5D=1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "pieces" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "pieces" [0m
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#destroy (for 0.0.0.0 at 2010-03-28 18:24:54) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mPiece Load (0.2ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+  [4;35;1mPiece Destroy (0.1ms)[0m   [0mDELETE FROM "pieces" WHERE "id" = 953125641[0m
+Redirected to http://test.host/pieces
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/pieces/953125641]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "pieces" [0m
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#edit (for 0.0.0.0 at 2010-03-28 18:24:54) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mPiece Load (0.2ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+Rendering template within layouts/pieces
+Rendering pieces/edit
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/pieces/953125641/edit]
+
+
+Processing PiecesController#index (for 0.0.0.0 at 2010-03-28 18:24:54) [GET]
+  [4;35;1mPiece Load (0.3ms)[0m   [0mSELECT * FROM "pieces" [0m
+Rendering template within layouts/pieces
+Rendering pieces/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/pieces]
+
+
+Processing PiecesController#new (for 0.0.0.0 at 2010-03-28 18:24:54) [GET]
+Rendering template within layouts/pieces
+Rendering pieces/new
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/pieces/new]
+  [4;36;1mPiece Load (0.2ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#show (for 0.0.0.0 at 2010-03-28 18:24:54) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+Rendering template within layouts/pieces
+Rendering pieces/show
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/pieces/953125641]
+  [4;36;1mPiece Create (0.3ms)[0m   [0;1mINSERT INTO "pieces" ("move_id", "radius", "created_at", "x", "y", "updated_at", "count") VALUES(1, 10.0, '2010-03-28 22:24:54', 1.0, 1.0, '2010-03-28 22:24:54', 1)[0m
+
+
+Processing PiecesController#update (for 0.0.0.0 at 2010-03-28 18:24:54) [PUT]
+  Parameters: {"id"=>"996332878", "piece"=>{"move_id"=>1, "radius"=>10, "x"=>1, "y"=>1, "count"=>1}}
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 996332878) [0m
+Redirected to http://test.host/pieces/996332878
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/pieces/996332878?piece%5Bcount%5D=1&piece%5Bmove_id%5D=1&piece%5Bradius%5D=10&piece%5Bx%5D=1&piece%5By%5D=1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+
+
+Processing GamesController#create (for 0.0.0.0 at 2010-03-28 18:25:40) [POST]
+  Parameters: {"game"=>{"uuid"=>"ABCD1234"}}
+  [4;35;1mGame Create (0.3ms)[0m   [0mINSERT INTO "games" ("created_at", "uuid", "updated_at", "active") VALUES('2010-03-28 22:25:40', 'ABCD1234', '2010-03-28 22:25:40', NULL)[0m
+Redirected to http://test.host/games/996332878
+Completed in 5ms (DB: 1) | 302 Found [http://test.host/games?game%5Buuid%5D=ABCD1234]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "games" [0m
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#destroy (for 0.0.0.0 at 2010-03-28 18:25:40) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+  [4;36;1mGame Destroy (0.1ms)[0m   [0;1mDELETE FROM "games" WHERE "id" = 953125641[0m
+Redirected to http://test.host/games
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/games/953125641]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "games" [0m
+  [4;36;1mGame Load (0.2ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#edit (for 0.0.0.0 at 2010-03-28 18:25:40) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+Rendering template within layouts/games
+Rendering games/edit
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/games/953125641/edit]
+
+
+Processing GamesController#index (for 0.0.0.0 at 2010-03-28 18:25:40) [GET]
+  [4;36;1mGame Load (0.2ms)[0m   [0;1mSELECT * FROM "games" [0m
+Rendering template within layouts/games
+Rendering games/index
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/games]
+
+
+Processing GamesController#new (for 0.0.0.0 at 2010-03-28 18:25:40) [GET]
+Rendering template within layouts/games
+Rendering games/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/games/new]
+  [4;35;1mGame Load (0.2ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#show (for 0.0.0.0 at 2010-03-28 18:25:40) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+  [4;35;1mMove Load (0.1ms)[0m   [0mSELECT "moves".* FROM "moves" WHERE ("moves".game_id = 953125641) [0m
+Rendering template within layouts/games
+Rendering games/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/games/953125641]
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#update (for 0.0.0.0 at 2010-03-28 18:25:40) [PUT]
+  Parameters: {"game"=>{}, "id"=>"953125641"}
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+Redirected to http://test.host/games/953125641
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/games/953125641?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "moves" [0m
+
+
+Processing MovesController#create (for 0.0.0.0 at 2010-03-28 18:25:40) [POST]
+  Parameters: {"move"=>{"angle"=>1, "x"=>1, "y"=>1, "power"=>1, "game_id"=>1, "attempts"=>1, "score_differential"=>0, "max_multiplier"=>1}}
+  [4;35;1mMove Create (0.3ms)[0m   [0mINSERT INTO "moves" ("angle", "created_at", "x", "y", "updated_at", "power", "attempt_failed", "game_id", "attempts", "score_differential", "max_multiplier") VALUES(1.0, '2010-03-28 22:25:40', 1.0, 1.0, '2010-03-28 22:25:40', 1.0, NULL, 1, 1, 0, 1)[0m
+Redirected to http://test.host/moves/996332878
+Completed in 4ms (DB: 0) | 302 Found [http://test.host/moves?move%5Bangle%5D=1&move%5Battempts%5D=1&move%5Bgame_id%5D=1&move%5Bmax_multiplier%5D=1&move%5Bpower%5D=1&move%5Bscore_differential%5D=0&move%5Bx%5D=1&move%5By%5D=1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "moves" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "moves" [0m
+  [4;36;1mMove Load (0.2ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+
+
+Processing MovesController#destroy (for 0.0.0.0 at 2010-03-28 18:25:40) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mMove Load (0.2ms)[0m   [0mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+  [4;36;1mMove Destroy (0.2ms)[0m   [0;1mDELETE FROM "moves" WHERE "id" = 953125641[0m
+Redirected to http://test.host/moves
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/moves/953125641]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "moves" [0m
+  [4;36;1mMove Load (0.2ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+
+
+Processing MovesController#edit (for 0.0.0.0 at 2010-03-28 18:25:40) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mMove Load (0.2ms)[0m   [0mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+Rendering template within layouts/moves
+Rendering moves/edit
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/moves/953125641/edit]
+
+
+Processing MovesController#index (for 0.0.0.0 at 2010-03-28 18:25:40) [GET]
+  [4;36;1mMove Load (0.3ms)[0m   [0;1mSELECT * FROM "moves" [0m
+Rendering template within layouts/moves
+Rendering moves/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/moves]
+
+
+Processing MovesController#new (for 0.0.0.0 at 2010-03-28 18:25:40) [GET]
+Rendering template within layouts/moves
+Rendering moves/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/moves/new]
+  [4;35;1mMove Load (0.2ms)[0m   [0mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+
+
+Processing MovesController#show (for 0.0.0.0 at 2010-03-28 18:25:40) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mMove Load (0.2ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+Rendering template within layouts/moves
+Rendering moves/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/moves/953125641]
+  [4;35;1mMove Create (0.3ms)[0m   [0mINSERT INTO "moves" ("angle", "created_at", "x", "y", "updated_at", "power", "attempt_failed", "game_id", "attempts", "score_differential", "max_multiplier") VALUES(1.0, '2010-03-28 22:25:40', 1.0, 1.0, '2010-03-28 22:25:40', 1.0, NULL, 1, 1, 0, 1)[0m
+
+
+Processing MovesController#update (for 0.0.0.0 at 2010-03-28 18:25:40) [PUT]
+  Parameters: {"id"=>"996332878", "move"=>{"angle"=>1, "x"=>1, "y"=>1, "power"=>1, "game_id"=>1, "attempts"=>1, "score_differential"=>0, "max_multiplier"=>1}}
+  [4;36;1mMove Load (0.2ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 996332878) [0m
+Redirected to http://test.host/moves/996332878
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/moves/996332878?move%5Bangle%5D=1&move%5Battempts%5D=1&move%5Bgame_id%5D=1&move%5Bmax_multiplier%5D=1&move%5Bpower%5D=1&move%5Bscore_differential%5D=0&move%5Bx%5D=1&move%5By%5D=1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "pieces" [0m
+
+
+Processing PiecesController#create (for 0.0.0.0 at 2010-03-28 18:25:40) [POST]
+  Parameters: {"piece"=>{"move_id"=>1, "radius"=>10, "x"=>1, "y"=>1, "count"=>1}}
+  [4;36;1mPiece Create (0.2ms)[0m   [0;1mINSERT INTO "pieces" ("move_id", "radius", "created_at", "x", "y", "updated_at", "count") VALUES(1, 10.0, '2010-03-28 22:25:40', 1.0, 1.0, '2010-03-28 22:25:40', 1)[0m
+Redirected to http://test.host/pieces/996332878
+Completed in 4ms (DB: 0) | 302 Found [http://test.host/pieces?piece%5Bcount%5D=1&piece%5Bmove_id%5D=1&piece%5Bradius%5D=10&piece%5Bx%5D=1&piece%5By%5D=1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "pieces" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "pieces" [0m
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#destroy (for 0.0.0.0 at 2010-03-28 18:25:40) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mPiece Load (0.2ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+  [4;35;1mPiece Destroy (0.1ms)[0m   [0mDELETE FROM "pieces" WHERE "id" = 953125641[0m
+Redirected to http://test.host/pieces
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/pieces/953125641]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "pieces" [0m
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#edit (for 0.0.0.0 at 2010-03-28 18:25:40) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mPiece Load (0.2ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+Rendering template within layouts/pieces
+Rendering pieces/edit
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/pieces/953125641/edit]
+
+
+Processing PiecesController#index (for 0.0.0.0 at 2010-03-28 18:25:40) [GET]
+  [4;35;1mPiece Load (0.3ms)[0m   [0mSELECT * FROM "pieces" [0m
+Rendering template within layouts/pieces
+Rendering pieces/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/pieces]
+
+
+Processing PiecesController#new (for 0.0.0.0 at 2010-03-28 18:25:40) [GET]
+Rendering template within layouts/pieces
+Rendering pieces/new
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/pieces/new]
+  [4;36;1mPiece Load (0.2ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#show (for 0.0.0.0 at 2010-03-28 18:25:40) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+Rendering template within layouts/pieces
+Rendering pieces/show
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/pieces/953125641]
+  [4;36;1mPiece Create (0.2ms)[0m   [0;1mINSERT INTO "pieces" ("move_id", "radius", "created_at", "x", "y", "updated_at", "count") VALUES(1, 10.0, '2010-03-28 22:25:40', 1.0, 1.0, '2010-03-28 22:25:40', 1)[0m
+
+
+Processing PiecesController#update (for 0.0.0.0 at 2010-03-28 18:25:40) [PUT]
+  Parameters: {"id"=>"996332878", "piece"=>{"move_id"=>1, "radius"=>10, "x"=>1, "y"=>1, "count"=>1}}
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 996332878) [0m
+Redirected to http://test.host/pieces/996332878
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/pieces/996332878?piece%5Bcount%5D=1&piece%5Bmove_id%5D=1&piece%5Bradius%5D=10&piece%5Bx%5D=1&piece%5By%5D=1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+
+
+Processing GamesController#create (for 0.0.0.0 at 2010-03-28 18:26:44) [POST]
+  Parameters: {"game"=>{"uuid"=>"ABCD1234"}}
+  [4;35;1mGame Create (0.4ms)[0m   [0mINSERT INTO "games" ("created_at", "uuid", "updated_at", "active") VALUES('2010-03-28 22:26:44', 'ABCD1234', '2010-03-28 22:26:44', 't')[0m
+Redirected to http://test.host/games/996332878
+Completed in 5ms (DB: 2) | 302 Found [http://test.host/games?game%5Buuid%5D=ABCD1234]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "games" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "games" [0m
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#destroy (for 0.0.0.0 at 2010-03-28 18:26:44) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+  [4;36;1mGame Destroy (0.2ms)[0m   [0;1mDELETE FROM "games" WHERE "id" = 953125641[0m
+Redirected to http://test.host/games
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/games/953125641]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "games" [0m
+  [4;36;1mGame Load (0.2ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#edit (for 0.0.0.0 at 2010-03-28 18:26:44) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+Rendering template within layouts/games
+Rendering games/edit
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/games/953125641/edit]
+
+
+Processing GamesController#index (for 0.0.0.0 at 2010-03-28 18:26:44) [GET]
+  [4;36;1mGame Load (0.2ms)[0m   [0;1mSELECT * FROM "games" [0m
+Rendering template within layouts/games
+Rendering games/index
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/games]
+
+
+Processing GamesController#new (for 0.0.0.0 at 2010-03-28 18:26:44) [GET]
+Rendering template within layouts/games
+Rendering games/new
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/games/new]
+  [4;35;1mGame Load (0.2ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#show (for 0.0.0.0 at 2010-03-28 18:26:44) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+  [4;35;1mMove Load (0.1ms)[0m   [0mSELECT "moves".* FROM "moves" WHERE ("moves".game_id = 953125641) [0m
+Rendering template within layouts/games
+Rendering games/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/games/953125641]
+  [4;36;1mGame Load (0.1ms)[0m   [0;1mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+
+
+Processing GamesController#update (for 0.0.0.0 at 2010-03-28 18:26:44) [PUT]
+  Parameters: {"game"=>{}, "id"=>"953125641"}
+  [4;35;1mGame Load (0.1ms)[0m   [0mSELECT * FROM "games" WHERE ("games"."id" = 953125641) [0m
+Redirected to http://test.host/games/953125641
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/games/953125641?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "moves" [0m
+
+
+Processing MovesController#create (for 0.0.0.0 at 2010-03-28 18:26:44) [POST]
+  Parameters: {"move"=>{"angle"=>1, "x"=>1, "y"=>1, "power"=>1, "game_id"=>1, "attempts"=>1, "score_differential"=>0, "max_multiplier"=>1}}
+  [4;35;1mMove Create (0.3ms)[0m   [0mINSERT INTO "moves" ("angle", "created_at", "x", "y", "updated_at", "power", "attempt_failed", "game_id", "attempts", "score_differential", "max_multiplier") VALUES(1.0, '2010-03-28 22:26:44', 1.0, 1.0, '2010-03-28 22:26:44', 1.0, 'f', 1, 1, 0, 1)[0m
+Redirected to http://test.host/moves/996332878
+Completed in 4ms (DB: 0) | 302 Found [http://test.host/moves?move%5Bangle%5D=1&move%5Battempts%5D=1&move%5Bgame_id%5D=1&move%5Bmax_multiplier%5D=1&move%5Bpower%5D=1&move%5Bscore_differential%5D=0&move%5Bx%5D=1&move%5By%5D=1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "moves" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "moves" [0m
+  [4;36;1mMove Load (0.2ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+
+
+Processing MovesController#destroy (for 0.0.0.0 at 2010-03-28 18:26:44) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mMove Load (0.2ms)[0m   [0mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+  [4;36;1mMove Destroy (0.3ms)[0m   [0;1mDELETE FROM "moves" WHERE "id" = 953125641[0m
+Redirected to http://test.host/moves
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/moves/953125641]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "moves" [0m
+  [4;36;1mMove Load (0.2ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+
+
+Processing MovesController#edit (for 0.0.0.0 at 2010-03-28 18:26:44) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mMove Load (0.2ms)[0m   [0mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+Rendering template within layouts/moves
+Rendering moves/edit
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/moves/953125641/edit]
+
+
+Processing MovesController#index (for 0.0.0.0 at 2010-03-28 18:26:44) [GET]
+  [4;36;1mMove Load (0.3ms)[0m   [0;1mSELECT * FROM "moves" [0m
+Rendering template within layouts/moves
+Rendering moves/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/moves]
+
+
+Processing MovesController#new (for 0.0.0.0 at 2010-03-28 18:26:44) [GET]
+Rendering template within layouts/moves
+Rendering moves/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/moves/new]
+  [4;35;1mMove Load (0.2ms)[0m   [0mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+
+
+Processing MovesController#show (for 0.0.0.0 at 2010-03-28 18:26:44) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mMove Load (0.2ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 953125641) [0m
+Rendering template within layouts/moves
+Rendering moves/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/moves/953125641]
+  [4;35;1mMove Create (0.3ms)[0m   [0mINSERT INTO "moves" ("angle", "created_at", "x", "y", "updated_at", "power", "attempt_failed", "game_id", "attempts", "score_differential", "max_multiplier") VALUES(1.0, '2010-03-28 22:26:44', 1.0, 1.0, '2010-03-28 22:26:44', 1.0, 'f', 1, 1, 0, 1)[0m
+
+
+Processing MovesController#update (for 0.0.0.0 at 2010-03-28 18:26:44) [PUT]
+  Parameters: {"id"=>"996332878", "move"=>{"angle"=>1, "x"=>1, "y"=>1, "power"=>1, "game_id"=>1, "attempts"=>1, "score_differential"=>0, "max_multiplier"=>1}}
+  [4;36;1mMove Load (0.2ms)[0m   [0;1mSELECT * FROM "moves" WHERE ("moves"."id" = 996332878) [0m
+Redirected to http://test.host/moves/996332878
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/moves/996332878?move%5Bangle%5D=1&move%5Battempts%5D=1&move%5Bgame_id%5D=1&move%5Bmax_multiplier%5D=1&move%5Bpower%5D=1&move%5Bscore_differential%5D=0&move%5Bx%5D=1&move%5By%5D=1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "pieces" [0m
+
+
+Processing PiecesController#create (for 0.0.0.0 at 2010-03-28 18:26:44) [POST]
+  Parameters: {"piece"=>{"move_id"=>1, "radius"=>10, "x"=>1, "y"=>1, "count"=>1}}
+  [4;36;1mPiece Create (0.2ms)[0m   [0;1mINSERT INTO "pieces" ("move_id", "radius", "created_at", "x", "y", "updated_at", "count") VALUES(1, 10.0, '2010-03-28 22:26:44', 1.0, 1.0, '2010-03-28 22:26:44', 1)[0m
+Redirected to http://test.host/pieces/996332878
+Completed in 4ms (DB: 0) | 302 Found [http://test.host/pieces?piece%5Bcount%5D=1&piece%5Bmove_id%5D=1&piece%5Bradius%5D=10&piece%5Bx%5D=1&piece%5By%5D=1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "pieces" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "pieces" [0m
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#destroy (for 0.0.0.0 at 2010-03-28 18:26:44) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mPiece Load (0.2ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+  [4;35;1mPiece Destroy (0.2ms)[0m   [0mDELETE FROM "pieces" WHERE "id" = 953125641[0m
+Redirected to http://test.host/pieces
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/pieces/953125641]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "pieces" [0m
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#edit (for 0.0.0.0 at 2010-03-28 18:26:44) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mPiece Load (0.2ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+Rendering template within layouts/pieces
+Rendering pieces/edit
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/pieces/953125641/edit]
+
+
+Processing PiecesController#index (for 0.0.0.0 at 2010-03-28 18:26:44) [GET]
+  [4;35;1mPiece Load (0.3ms)[0m   [0mSELECT * FROM "pieces" [0m
+Rendering template within layouts/pieces
+Rendering pieces/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/pieces]
+
+
+Processing PiecesController#new (for 0.0.0.0 at 2010-03-28 18:26:44) [GET]
+Rendering template within layouts/pieces
+Rendering pieces/new
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/pieces/new]
+  [4;36;1mPiece Load (0.2ms)[0m   [0;1mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+
+
+Processing PiecesController#show (for 0.0.0.0 at 2010-03-28 18:26:44) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 953125641) [0m
+Rendering template within layouts/pieces
+Rendering pieces/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pieces/953125641]
+  [4;36;1mPiece Create (0.3ms)[0m   [0;1mINSERT INTO "pieces" ("move_id", "radius", "created_at", "x", "y", "updated_at", "count") VALUES(1, 10.0, '2010-03-28 22:26:44', 1.0, 1.0, '2010-03-28 22:26:44', 1)[0m
+
+
+Processing PiecesController#update (for 0.0.0.0 at 2010-03-28 18:26:44) [PUT]
+  Parameters: {"id"=>"996332878", "piece"=>{"move_id"=>1, "radius"=>10, "x"=>1, "y"=>1, "count"=>1}}
+  [4;35;1mPiece Load (0.2ms)[0m   [0mSELECT * FROM "pieces" WHERE ("pieces"."id" = 996332878) [0m
+Redirected to http://test.host/pieces/996332878
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/pieces/996332878?piece%5Bcount%5D=1&piece%5Bmove_id%5D=1&piece%5Bradius%5D=10&piece%5Bx%5D=1&piece%5By%5D=1]
